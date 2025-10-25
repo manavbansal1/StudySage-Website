@@ -1,0 +1,114 @@
+/* Progress Page Animations */
+
+/* Milestone cards staggered animation */
+.milestone-card {
+  opacity: 0;
+  animation: fade-in-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Stat cards animation */
+.stat-card {
+  opacity: 0;
+  animation: scale-in 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.stat-card:nth-child(1) { animation-delay: 0.1s; }
+.stat-card:nth-child(2) { animation-delay: 0.2s; }
+.stat-card:nth-child(3) { animation-delay: 0.3s; }
+
+/* Sub-milestone hover effect */
+.sub-milestone-item {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.sub-milestone-item:hover {
+  transform: translateX(4px);
+}
+
+/* Smooth checkbox animation */
+@keyframes check-bounce {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.checkbox-animate {
+  animation: check-bounce 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* Progress bar smooth fill */
+@keyframes progress-fill {
+  from {
+    width: 0;
+  }
+}
+
+.progress-bar-fill {
+  animation: progress-fill 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Image gallery smooth reveal */
+.image-reveal {
+  opacity: 0;
+  transform: scale(0.95);
+  animation: image-fade-in 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.image-reveal:nth-child(1) { animation-delay: 0.1s; }
+.image-reveal:nth-child(2) { animation-delay: 0.2s; }
+.image-reveal:nth-child(3) { animation-delay: 0.3s; }
+.image-reveal:nth-child(4) { animation-delay: 0.4s; }
+
+@keyframes image-fade-in {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Link hover glow */
+.link-item {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.link-item:hover {
+  box-shadow: 0 4px 16px rgba(101, 36, 151, 0.15);
+}
+
+/* Expand/collapse smooth animation */
+.expand-content {
+  animation: expand 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  transform-origin: top;
+}
+
+@keyframes expand {
+  from {
+    opacity: 0;
+    max-height: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    max-height: 2000px;
+    transform: translateY(0);
+  }
+}
+
+/* Status badge pulse */
+.status-badge-pulse {
+  animation: gentle-pulse 3s ease-in-out infinite;
+}
+
+@keyframes gentle-pulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 currentColor;
+    opacity: 1;
+  }
+  50% {
+    box-shadow: 0 0 0 4px transparent;
+    opacity: 0.9;
+  }
+}
