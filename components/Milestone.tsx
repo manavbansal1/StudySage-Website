@@ -1,19 +1,6 @@
 'use client';
 import { useState } from 'react';
-import { 
-  ChevronDown, 
-  ChevronUp, 
-  CheckCircle2, 
-  Circle,
-  Calendar,
-  Users,
-  Tag,
-  ExternalLink,
-  Github,
-  FileText,
-  Image as ImageIcon,
-  MessageSquare
-} from 'lucide-react';
+import { ChevronDown, ChevronUp, CheckCircle2, Circle, Calendar, Users, Tag, ExternalLink, Github, FileText, Image as ImageIcon, MessageSquare} from 'lucide-react';
 import Image from 'next/image';
 
 interface SubMilestone {

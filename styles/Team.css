@@ -1,0 +1,87 @@
+/* Team Page Animations */
+
+/* Team member cards staggered animation */
+.team-member-card {
+  opacity: 0;
+  animation: fade-in-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Value cards animation */
+.value-card {
+  opacity: 0;
+  animation: scale-in 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.value-card:nth-child(1) { animation-delay: 0.1s; }
+.value-card:nth-child(2) { animation-delay: 0.2s; }
+.value-card:nth-child(3) { animation-delay: 0.3s; }
+.value-card:nth-child(4) { animation-delay: 0.4s; }
+
+/* Group photo container animation */
+.group-photo-container {
+  opacity: 0;
+  animation: scale-in 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation-delay: 0.3s;
+}
+
+/* Profile picture hover glow */
+.profile-glow {
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.profile-glow:hover {
+  box-shadow: 0 0 30px rgba(101, 36, 151, 0.4),
+              0 0 60px rgba(101, 36, 151, 0.2);
+}
+
+/* Social icon smooth hover */
+.social-icon {
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.social-icon:hover {
+  transform: translateY(-3px) scale(1.1);
+}
+
+/* Skill tag hover effect */
+.skill-tag {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.skill-tag:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(101, 36, 151, 0.2);
+}
+
+/* Team story fade in */
+.team-story {
+  opacity: 0;
+  animation: fade-in-up 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation-delay: 0.5s;
+}
+
+/* Responsibility list stagger */
+.responsibility-item {
+  opacity: 0;
+  animation: slide-in-left 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.responsibility-item:nth-child(1) { animation-delay: 0.1s; }
+.responsibility-item:nth-child(2) { animation-delay: 0.15s; }
+.responsibility-item:nth-child(3) { animation-delay: 0.2s; }
+.responsibility-item:nth-child(4) { animation-delay: 0.25s; }
+.responsibility-item:nth-child(5) { animation-delay: 0.3s; }
+
+/* Border glow animation */
+@keyframes border-glow {
+  0%, 100% {
+    border-color: rgba(101, 36, 151, 0);
+  }
+  50% {
+    border-color: rgba(101, 36, 151, 0.3);
+  }
+}
+
+.border-glow-animate {
+  animation: border-glow 3s ease-in-out infinite;
+}
