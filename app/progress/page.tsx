@@ -432,13 +432,13 @@ export default function ProgressPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="max-w-7xl mx-auto px-6 py-16 text-center">
+      <section className="max-w-7xl mx-auto px-6 py-5 text-center ">
         <div className="p-12 rounded-3xl bg-gradient-to-br from-[#652497] via-[#7c3aed] to-[#8b5cf6] text-white shadow-2xl">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
             Want to contribute or follow along?
           </h2>
           <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
-            Check out our GitHub repository or join our Discord community to stay updated with the latest developments
+            Check out our GitHub repository to stay updated with the latest developments
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
@@ -448,12 +448,6 @@ export default function ProgressPage() {
               className="px-8 py-4 rounded-xl bg-white text-[#652497] font-bold text-lg hover:bg-gray-100 button-smooth"
             >
               View on GitHub
-            </a>
-            <a
-              href="/about"
-              className="px-8 py-4 rounded-xl bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white font-bold text-lg hover:bg-white/20 button-smooth"
-            >
-              About the Team
             </a>
           </div>
         </div>

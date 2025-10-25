@@ -10,7 +10,6 @@ const links = [
   { name: "Idea", href: "/idea" },
   { name: "Progress", href: "/progress" },
   { name: "Team", href: "/team" },
-  { name: "About", href: "/about" },
 ];
 
 
