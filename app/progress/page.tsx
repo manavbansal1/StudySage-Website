@@ -13,8 +13,7 @@ const milestones = [
     tags: ['Setup'],
     team: ['Manav Bansal'],
     links: [
-      { label: 'GitHub Repository', url: 'https://github.com/manavbansal1/studysage' },
-      { label: 'Firebase Console', url: 'https://console.firebase.google.com' }
+      { label: 'GitHub Repository', url: 'https://github.com/manavbansal1/studysage' }
     ],
     subMilestones: [
       { 
@@ -29,16 +28,16 @@ const milestones = [
         id: '1-2', 
         title: 'Confirmed that the environment builds without dependency errors.', 
         completed: true, 
-        assignee: 'John Doe',
+        assignee: 'Ansh Tiwari',
         notes: [
-          'Set up React Native environment',
+          'Set up Kotlin environment',
         ]
       },
       { 
         id: '1-3', 
         title: 'Established naming conventions and directory structure for future development.', 
         completed: true, 
-        assignee: 'Jane Smith',
+        assignee: 'Kabir Singh Sidhu',
         notes: [
           'Created folders for components, screens, services, and assets'
         ]
@@ -48,7 +47,7 @@ const milestones = [
         title: 'Build the basic home screen and navigation structure.', 
         completed: true,
         notes: [
-          'Implemented React Navigation for screen transitions'
+          'Implemented Navigation for screen transitions'
         ]
       }
     ],
@@ -56,95 +55,58 @@ const milestones = [
   },
   {
     id: '2',
-    title: 'AI Flashcard Generator',
-    description: 'Integrated AI-powered note parser that automatically converts uploaded PDFs and documents into intelligent flashcards with smart content extraction.',
-    date: 'February 3, 2025',
+    title: 'Implemented Home Screen, Navigation Structure & Sign-in Sign-out functionality using Firebase',
+    description: 'Developed the home screen UI, set up navigation between screens, and integrated user authentication with sign-in and sign-out features.',
+    date: 'Oct 18, 2025',
     status: 'completed' as const,
     progress: 100,
-    tags: ['AI', 'NLP', 'Core Feature'],
-    team: ['John Doe', 'Alex Johnson'],
+    tags: ['Core Features', 'Firebase', 'Authentication', 'UI/UX'],
+    team: ['Akaaljot Singh Mathoda', 'Yadhu Choudhary'],
     images: [
       'https://placehold.co/800x450/652497/FFFFFF/png?text=Flashcard+UI',
       'https://placehold.co/800x450/7c3aed/FFFFFF/png?text=AI+Processing',
       'https://placehold.co/800x450/8b5cf6/FFFFFF/png?text=PDF+Upload'
     ],
-    links: [
-      { label: 'OpenAI API Documentation', url: 'https://platform.openai.com/docs' },
-      { label: 'Feature Demo Video', url: 'https://youtube.com/demo' }
-    ],
     subMilestones: [
       { 
         id: '2-1', 
-        title: 'Research and select AI model (GPT-4)', 
+        title: 'Initialized Android project with Jetpack Compose', 
         completed: true, 
-        assignee: 'John Doe',
+        assignee: 'TBD',
         notes: [
-          'Evaluated GPT-4, Claude, and Gemini',
-          'GPT-4 chosen for best flashcard quality',
-          'Set up OpenAI API integration'
+          'This commit established the UI skeleton and ensured Compose and navigation were correctly integrated.'
         ]
       },
       { 
         id: '2-2', 
-        title: 'Build PDF text extraction pipeline', 
+        title: 'Designed a composable HomeScreen() showing key options: Upload Notes, Quiz, and Games.', 
         completed: true, 
-        assignee: 'Alex Johnson',
+        assignee: 'TBD',
         images: [
           'https://placehold.co/600x400/652497/FFFFFF/png?text=PDF+Parser'
         ],
         notes: [
-          'Implemented PDF.js for text extraction',
-          'Added OCR support for scanned documents',
-          'Handles multi-column layouts'
+          'Created buttons for Upload Notes, Quiz, and Games',
         ]
       },
       { 
         id: '2-3', 
-        title: 'Implement prompt engineering for flashcard generation', 
+        title: 'Integrate user authentication with sign-in and sign-out functionality', 
         completed: true, 
-        assignee: 'John Doe',
+        assignee: 'TBD',
         notes: [
-          'Optimized prompts for different subjects',
-          'Added context-aware question generation',
-          'Implemented difficulty level adjustment'
+          'Set up Firebase Auth for user management',
+          'Implemented sign-in and sign-out flows'
         ]
       },
-      { 
-        id: '2-4', 
-        title: 'Create flashcard review UI', 
-        completed: true,
-        images: [
-          'https://placehold.co/600x400/7c3aed/FFFFFF/png?text=Card+Front',
-          'https://placehold.co/600x400/8b5cf6/FFFFFF/png?text=Card+Back'
-        ],
-        notes: [
-          'Built swipe-based card interface',
-          'Added smooth flip animations',
-          'Implemented progress tracking'
-        ]
-      },
-      { 
-        id: '2-5', 
-        title: 'Add support for images in flashcards', 
-        completed: true 
-      },
-      { 
-        id: '2-6', 
-        title: 'Implement spaced repetition algorithm', 
-        completed: true,
-        notes: [
-          'Integrated SM-2 algorithm',
-          'Tracks review intervals and difficulty'
-        ]
-      }
     ],
-    notes: 'The AI integration exceeded expectations. GPT-4 generates high-quality flashcards with minimal errors. Added support for multiple languages and subject-specific formatting.'
+    notes: 'Home screen UI is functional with navigation working smoothly. Authentication flows are integrated using Firebase Auth.'
   },
   {
     id: '3',
-    title: 'Gamification & Quiz System',
+    title: 'Added App Icon & Began AI Notes Summary Integration',
     description: 'Building interactive quiz battles, real-time multiplayer functionality, leaderboards, and achievement system to make studying engaging and competitive.',
-    date: 'February 20, 2025',
+    date: 'October 20, 2025',
     status: 'in-progress' as const,
     progress: 65,
     tags: ['Gamification', 'Real-time', 'Multiplayer'],
