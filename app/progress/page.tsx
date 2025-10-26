@@ -6,16 +6,12 @@ const milestones = [
   {
     id: '1',
     title: 'Project Setup & Foundation',
-    description: 'Created Android project structure, initialized Firebase backend, set up authentication system, and configured development environment.',
-    date: 'January 15, 2025',
+    description: 'Created the StudySage project repository and set up the initial codebase structure.',
+    date: 'October 17, 2025',
     status: 'completed' as const,
     progress: 100,
-    tags: ['Setup', 'Firebase', 'Authentication'],
-    team: ['John Doe', 'Jane Smith'],
-    images: [
-      'https://placehold.co/800x450/652497/FFFFFF/png?text=Firebase+Setup',
-      'https://placehold.co/800x450/7c3aed/FFFFFF/png?text=Authentication+Flow'
-    ],
+    tags: ['Setup'],
+    team: ['Manav Bansal'],
     links: [
       { label: 'GitHub Repository', url: 'https://github.com/manavbansal1/studysage' },
       { label: 'Firebase Console', url: 'https://console.firebase.google.com' }
@@ -23,58 +19,40 @@ const milestones = [
     subMilestones: [
       { 
         id: '1-1', 
-        title: 'Initialize Android Studio project', 
+        title: 'This commit marks the start of the project setup.', 
         completed: true,
         notes: [
-          'Set up project with Kotlin and Jetpack Compose',
-          'Configured Gradle dependencies and build variants'
+          'Initialized Git repository'      
         ]
       },
       { 
         id: '1-2', 
-        title: 'Set up Firebase project and SDK', 
+        title: 'Confirmed that the environment builds without dependency errors.', 
         completed: true, 
         assignee: 'John Doe',
-        images: [
-          'https://placehold.co/600x400/652497/FFFFFF/png?text=Firebase+Dashboard'
-        ],
         notes: [
-          'Created Firebase project in console',
-          'Integrated Firebase SDK into Android app',
-          'Set up development and production environments'
+          'Set up React Native environment',
         ]
       },
       { 
         id: '1-3', 
-        title: 'Implement email/password authentication', 
+        title: 'Established naming conventions and directory structure for future development.', 
         completed: true, 
         assignee: 'Jane Smith',
-        images: [
-          'https://placehold.co/600x400/7c3aed/FFFFFF/png?text=Login+Screen',
-          'https://placehold.co/600x400/8b5cf6/FFFFFF/png?text=Registration'
-        ],
         notes: [
-          'Built login and registration UI',
-          'Implemented password reset functionality',
-          'Added email verification flow'
+          'Created folders for components, screens, services, and assets'
         ]
       },
       { 
         id: '1-4', 
-        title: 'Create user database schema', 
+        title: 'Build the basic home screen and navigation structure.', 
         completed: true,
         notes: [
-          'Designed Firestore collections structure',
-          'Set up security rules for user data'
+          'Implemented React Navigation for screen transitions'
         ]
-      },
-      { 
-        id: '1-5', 
-        title: 'Set up development and production environments', 
-        completed: true 
       }
     ],
-    notes: 'Initial setup went smoothly. Firebase authentication was integrated without issues. Decided to use Firestore for real-time data sync capabilities.'
+    notes: 'Initial setup went smoothly.'
   },
   {
     id: '2',

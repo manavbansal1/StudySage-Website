@@ -1,4 +1,4 @@
-import { Users, Heart, Lightbulb, Zap, Target } from 'lucide-react';
+import { Users, Heart, Lightbulb, Zap, Target, Github } from 'lucide-react';
 import Image from 'next/image';
 import TeamMember from '@/components/TeamMember';
 import '../../styles/Team.css';
@@ -6,7 +6,7 @@ import '../../styles/Team.css';
 const teamMembers = [
   {
     id: '1',
-    name: 'Alex Johnson',
+    name: 'Manav Bansal',
     role: 'Project Lead & Full-Stack Developer',
     description: 'Leading the StudySage project with a passion for educational technology. Specializes in system architecture and ensuring seamless integration between frontend and backend.',
     image: 'https://placehold.co/400x400/652497/FFFFFF/png?text=AJ',
@@ -18,14 +18,15 @@ const teamMembers = [
     ],
     skills: ['Node.js', 'React', 'Firebase', 'MongoDB', 'System Design', 'Git'],
     social: {
-      github: 'https://github.com/alexjohnson',
-      linkedin: 'https://linkedin.com/in/alexjohnson',
-      email: 'alex@studysage.com'
+      github: 'https://github.com/manavbansal1',
+      linkedin: 'https://linkedin.com/in/manavbansal39',
+      email: 'mba208@sfu.ca',
+      portfolio: 'https://manavbansal.vercel.app'
     }
   },
   {
     id: '2',
-    name: 'Sarah Chen',
+    name: 'Akaaljot Singh Mathoda',
     role: 'AI/ML Engineer',
     description: 'AI specialist focusing on natural language processing and machine learning. Responsible for the intelligent flashcard generation system and recommendation algorithms.',
     image: 'https://placehold.co/400x400/7c3aed/FFFFFF/png?text=SC',
@@ -37,14 +38,14 @@ const teamMembers = [
     ],
     skills: ['Python', 'TensorFlow', 'OpenAI API', 'NLP', 'Machine Learning', 'Data Analysis'],
     social: {
-      github: 'https://github.com/sarahchen',
-      linkedin: 'https://linkedin.com/in/sarahchen',
-      portfolio: 'https://sarahchen.dev'
+      github: 'https://github.com/jassa47',
+      linkedin: 'https://linkedin.com/in/akaaljot-singh-mathoda-703b04253',
+      email: 'asm40@sfu.ca'
     }
   },
   {
     id: '3',
-    name: 'Marcus Rodriguez',
+    name: 'Ansh Tiwari',
     role: 'Android Developer',
     description: 'Mobile development expert crafting beautiful and performant Android experiences. Focuses on creating intuitive UI/UX that makes studying effortless and engaging.',
     image: 'https://placehold.co/400x400/8b5cf6/FFFFFF/png?text=MR',
@@ -56,14 +57,15 @@ const teamMembers = [
     ],
     skills: ['Kotlin', 'Android SDK', 'Jetpack Compose', 'Material Design', 'Socket.io', 'Firebase'],
     social: {
-      github: 'https://github.com/marcusrodriguez',
-      linkedin: 'https://linkedin.com/in/marcusrodriguez',
-      email: 'marcus@studysage.com'
+      github: 'https://github.com/candyragi',
+      linkedin: 'https://linkedin.com/in/ansh-tiwari-a19986202/',
+      email: 'ata185@sfu.ca',
+      portfolio: 'https://www.candyragi.info/'
     }
   },
   {
     id: '4',
-    name: 'Emily Park',
+    name: 'Kabir Singh Sidhu',
     role: 'UI/UX Designer',
     description: 'Creative designer with a passion for user-centered design. Ensures StudySage is not only functional but also delightful to use through thoughtful interfaces and smooth interactions.',
     image: 'https://placehold.co/400x400/a78bfa/FFFFFF/png?text=EP',
@@ -75,14 +77,15 @@ const teamMembers = [
     ],
     skills: ['Figma', 'Adobe XD', 'User Research', 'Prototyping', 'Design Systems', 'Illustration'],
     social: {
-      linkedin: 'https://linkedin.com/in/emilypark',
-      portfolio: 'https://emilypark.design',
-      email: 'emily@studysage.com'
+      github: 'https://github.com/kab1rs1dhu',
+      linkedin: '',
+      email: 'kss31@sfu.ca',
+      portfolio: 'https://kabirsidhu.dev/'
     }
   },
   {
     id: '5',
-    name: 'David Kim',
+    name: 'Yadhu Choudhary',
     role: 'Backend Developer & DevOps',
     description: 'Infrastructure and backend specialist ensuring StudySage runs smoothly and scales effectively. Manages cloud infrastructure, CI/CD pipelines, and server optimization.',
     image: 'https://placehold.co/400x400/c4b5fd/FFFFFF/png?text=DK',
@@ -94,9 +97,9 @@ const teamMembers = [
     ],
     skills: ['Node.js', 'Express', 'Docker', 'AWS', 'Firebase', 'PostgreSQL', 'Redis'],
     social: {
-      github: 'https://github.com/davidkim',
-      linkedin: 'https://linkedin.com/in/davidkim',
-      email: 'david@studysage.com'
+      github: 'https://github.com/yadhuuu1110',
+      linkedin: 'https://linkedin.com/in/yadhu-choudhary-744b98380',
+      email: 'yca478@sfu.ca'
     }
   }
 ];
