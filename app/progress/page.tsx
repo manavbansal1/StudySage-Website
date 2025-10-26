@@ -8,7 +8,7 @@ const milestones = [
     title: 'Project Setup & Foundation',
     description: 'Created the StudySage project repository and set up the initial codebase structure.',
     date: 'October 17, 2025',
-    status: 'completed' as const,
+    status: 'completed' as 'completed' | 'in-progress',
     progress: 100,
     tags: ['Setup', 'Kotlin', 'Android'],
     team: ['Manav Bansal'],
