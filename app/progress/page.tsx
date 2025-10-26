@@ -10,7 +10,7 @@ const milestones = [
     date: 'October 17, 2025',
     status: 'completed' as const,
     progress: 100,
-    tags: ['Setup'],
+    tags: ['Setup', 'Kotlin', 'Android'],
     team: ['Manav Bansal'],
     links: [
       { label: 'GitHub Repository', url: 'https://github.com/manavbansal1/studysage' }
@@ -105,188 +105,120 @@ const milestones = [
   {
     id: '3',
     title: 'Added App Icon & Began AI Notes Summary Integration',
-    description: 'Building interactive quiz battles, real-time multiplayer functionality, leaderboards, and achievement system to make studying engaging and competitive.',
+    description: 'Added a custom launcher icon, and began initial development of the AI-powered Notes Summary feature using the Gemini API.',
     date: 'October 20, 2025',
-    status: 'in-progress' as const,
-    progress: 65,
-    tags: ['Gamification', 'Real-time', 'Multiplayer'],
-    team: ['Jane Smith', 'Alex Johnson', 'Sarah Lee'],
+    status: 'completed' as const,
+    progress: 100,
+    tags: ['Gemini API (planned)'],
+    team: ['Manav Bansal', 'Akaaljot Singh Mathoda', 'Yadhu Choudhary', 'Kabir Singh Sidhu', 'Ansh Tiwari'],
     images: [
       'https://placehold.co/800x450/7c3aed/FFFFFF/png?text=Quiz+Battle+UI',
       'https://placehold.co/800x450/8b5cf6/FFFFFF/png?text=Leaderboard'
     ],
-    links: [
-      { label: 'WebSocket Documentation', url: 'https://socket.io/docs' },
-      { label: 'Game Design Doc', url: 'https://docs.google.com/document/d/example' }
-    ],
     subMilestones: [
       { 
         id: '3-1', 
-        title: 'Design quiz battle UI/UX', 
+        title: 'Designed app icon', 
         completed: true, 
-        assignee: 'Sarah Lee',
+        assignee: 'Manav Bansal',
         images: [
           'https://placehold.co/600x400/652497/FFFFFF/png?text=Battle+Mockup'
         ],
         notes: [
-          'Created Figma mockups for quiz interface',
-          'Designed real-time scoring animations',
-          'Added timer and progress indicators'
+          'Replaced default launcher icon with the new StudySage app icon.'
         ]
       },
       { 
         id: '3-2', 
-        title: 'Implement real-time WebSocket connections', 
+        title: 'Created base structure & placeholder functions for the AI notes summarization module.', 
         completed: true, 
-        assignee: 'Alex Johnson',
+        assignee: 'Ansh Tiwari',
         notes: [
-          'Set up Socket.io server',
-          'Implemented reconnection logic',
-          'Added latency compensation'
+          'AI summarization logic not fully implemented yet',
+          'Set up API call structure for future integration with Gemini API'
         ]
-      },
-      { 
-        id: '3-3', 
-        title: 'Build matchmaking system', 
-        completed: true, 
-        assignee: 'Jane Smith',
-        notes: [
-          'Implemented skill-based matchmaking',
-          'Added queue system for waiting players',
-          'Created room management logic'
-        ]
-      },
-      { 
-        id: '3-4', 
-        title: 'Create leaderboard system', 
-        completed: false, 
-        assignee: 'Jane Smith',
-        images: [
-          'https://placehold.co/600x400/7c3aed/FFFFFF/png?text=Leaderboard+Design'
-        ],
-        notes: [
-          'Currently implementing global rankings',
-          'Adding friend leaderboards next'
-        ]
-      },
-      { 
-        id: '3-5', 
-        title: 'Add achievement badges and rewards', 
-        completed: false, 
-        assignee: 'Sarah Lee',
-        notes: [
-          'Designing badge artwork',
-          'Planning unlock conditions'
-        ]
-      },
-      { 
-        id: '3-6', 
-        title: 'Implement power-ups and special abilities', 
-        completed: false 
       }
     ],
-    notes: 'Real-time gameplay is working well with minimal latency. Currently optimizing server performance for 50+ concurrent players. Achievement system design is in final review.'
+    notes: 'App icon added successfully. Initial groundwork for AI Notes Summary feature laid out, but full integration with Gemini API is pending.'
   },
   {
     id: '4',
-    title: 'Social Features & Study Groups',
-    description: 'Developing collaborative study rooms, friend system, chat functionality, and study group management for social learning experiences.',
-    date: 'March 10, 2025',
-    status: 'in-progress' as const,
-    progress: 30,
-    tags: ['Social', 'Collaboration', 'Chat'],
-    team: ['Sarah Lee', 'John Doe'],
+    title: 'Implemented Profile Page & Integrated Cloudinary',
+    description: 'Developed a fully functional Profile Page displaying user information, levels, XP, and streak data.',
+    date: 'October 21, 2025',
+    status: 'completed' as const,
+    progress: 100,
+    tags: ['Cloudinary API'],
+    team: ['Manav Bansal', 'Akaaljot Singh Mathoda', 'Yadhu Choudhary', 'Kabir Singh Sidhu', 'Ansh Tiwari'],
     images: [
       'https://placehold.co/800x450/8b5cf6/FFFFFF/png?text=Study+Groups'
     ],
     subMilestones: [
       { 
         id: '4-1', 
-        title: 'Design friend system and profiles', 
+        title: 'Created a visually rich and responsive Profile Screen using Jetpack Compose.', 
         completed: true, 
-        assignee: 'Sarah Lee',
+        assignee: 'Kabir Singh Sidhu',
         images: [
           'https://placehold.co/600x400/a78bfa/FFFFFF/png?text=Profile+Design'
         ],
         notes: [
-          'Created user profile pages',
-          'Added friend request system',
-          'Designed activity feed'
+          'Profile data successfully fetched and rendered dynamically.'
         ]
       },
       { 
         id: '4-2', 
-        title: 'Implement in-app messaging', 
+        title: 'Displayed user data such as Name, Email, About Section, Level, XP, and Streak.', 
         completed: true, 
-        assignee: 'John Doe',
+        assignee: 'Akaaljot Singh Mathoda',
         notes: [
-          'Built real-time chat with Socket.io',
-          'Added message read receipts',
-          'Implemented notification system'
+          'Designed consistent purple gradient theme matching overall StudySage UI.'
         ]
       },
       { 
         id: '4-3', 
-        title: 'Create study group creation and management', 
-        completed: false, 
-        assignee: 'Sarah Lee',
+        title: 'Integrated Cloudinary API to support image uploads for user avatars.', 
+        completed: true, 
+        assignee: 'Ansh Tiwari',
         notes: [
-          'Working on group creation flow',
-          'Designing admin controls'
-        ]
-      },
-      { 
-        id: '4-4', 
-        title: 'Build shared flashcard collections', 
-        completed: false 
-      },
-      { 
-        id: '4-5', 
-        title: 'Add voice/video call integration', 
-        completed: false,
-        notes: [
-          'Evaluating Agora vs WebRTC'
+          'Cloudinary integration enables real-time profile image updates.'
         ]
       }
     ],
-    notes: 'Friend system is live and working well. Exploring integration with Agora SDK for voice/video calls. Considering adding screen sharing for remote study sessions.'
+    notes: 'Added edit option placeholder and tested Cloudinary uploads successfully; ensured consistent gradient theme and responsive design across devices.'
   },
   {
     id: '5',
-    title: 'Advanced Analytics Dashboard',
-    description: 'Creating comprehensive analytics and insights dashboard with learning patterns, progress tracking, and personalized study recommendations.',
-    date: 'March 25, 2025',
-    status: 'planned' as const,
+    title: 'Added Notes Screen & Summarization Feature using Gemini API',
+    description: 'Implemented new Notes Screen to fetch and display AI-generated summaries from the database. Currently supports only .txt files, PDF parsing still in progress.',
+    date: 'October 22, 2025',
+    status: 'completed' as const,
     progress: 0,
-    tags: ['Analytics', 'ML', 'Insights'],
-    team: ['Alex Johnson'],
+    tags: ['Gemini API (completed)', 'PDF Parsing (in progress)'],
+    team: ['Manav Bansal', 'Akaaljot Singh Mathoda', 'Yadhu Choudhary', 'Kabir Singh Sidhu', 'Ansh Tiwari'],
     subMilestones: [
-      { id: '5-1', title: 'Design analytics data model', completed: false, assignee: 'Alex Johnson' },
-      { id: '5-2', title: 'Implement data collection and tracking', completed: false },
-      { id: '5-3', title: 'Build visualization components', completed: false },
-      { id: '5-4', title: 'Create ML model for study recommendations', completed: false },
-      { id: '5-5', title: 'Add export and sharing features', completed: false }
+      { id: '5-1', title: 'Built Notes Screen UI with data binding to NotesViewModel.', completed: true, assignee: 'Manav Bansal' },
+      { id: '5-2', title: 'Integrated summarization logic for text files using Gemini API setup.', completed: true, assignee: 'Yadhu Choudhary' },
+      { id: '5-3', title: 'Connected database to fetch stored notes and summaries.', completed: true, assignee: 'Kabir Singh Sidhu' },
+      { id: '5-4', title: 'Identified and started debugging PDF parsing issue.', completed: true, assignee: 'Akaaljot Singh Mathoda' }
     ],
-    notes: 'Planning to use TensorFlow Lite for on-device ML predictions. Will include insights like optimal study times, subject difficulty analysis, and retention rates.'
+    notes: 'Currently functional for .txt uploads; PDF extraction under development to support wider note formats.'
   },
   {
     id: '6',
-    title: 'Mobile App Polish & Beta Launch',
-    description: 'Final UI/UX refinements, performance optimization, bug fixes, user testing, and preparing for beta launch on Play Store.',
-    date: 'April 15, 2025',
-    status: 'planned' as const,
+    title: 'Fixed PDF Parsing & Expanded File Support',
+    description: 'Resolved the PDF parsing error, ensuring accurate extraction of text, tags, and summaries. Enhanced the Notes Screen to display note format indicators (PDF, TXT, DOC, DOCX).',
+    date: 'October 23, 2025',
+    status: 'completed' as const,
     progress: 0,
-    tags: ['Polish', 'Testing', 'Launch'],
-    team: ['John Doe', 'Jane Smith', 'Alex Johnson', 'Sarah Lee'],
+    tags: ['PDF Parsing (completed)', 'File I/O'],
+    team: ['Manav Bansal', 'Akaaljot Singh Mathoda', 'Yadhu Choudhary', 'Kabir Singh Sidhu', 'Ansh Tiwari'],
     subMilestones: [
-      { id: '6-1', title: 'Conduct user testing sessions', completed: false },
-      { id: '6-2', title: 'Fix critical bugs and issues', completed: false },
-      { id: '6-3', title: 'Optimize app performance and loading times', completed: false },
-      { id: '6-4', title: 'Create app store assets and descriptions', completed: false },
-      { id: '6-5', title: 'Submit to Play Store for review', completed: false },
-      { id: '6-6', title: 'Launch beta program with 100 users', completed: false }
+      { id: '6-1', title: 'Fixed parsing logic for PDFs using improved text extraction pipeline.', completed: true, assignee: 'Manav Bansal' },
+      { id: '6-2', title: 'Added compatibility for DOC, DOCX file uploads and summaries.', completed: true, assignee: 'Akaaljot Singh Mathoda' },
+      { id: '6-3', title: 'Updated Notes UI to visually show file type labels for each entry.', completed: true,assignee: 'Ansh Tiwari' }
     ],
-    notes: 'Target beta launch date is April 20th. Planning marketing campaign and social media presence. Will gather feedback through in-app surveys and analytics.'
+    notes: 'PDF, TXT and DOC summarization now fully functional; validated with diverse document samples for reliability and tag accuracy.'
   }
 ];
 

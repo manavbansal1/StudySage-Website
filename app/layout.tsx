@@ -2,7 +2,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 
 export const metadata = {
-  title: "StudySage Project",
+  title: "StudySage",
   description: "AI-powered study companion project website",
 };
 
