@@ -326,10 +326,6 @@ const milestones = [
     status: 'completed' as const,
     progress: 100,
     team: ['Manav Bansal', 'Akaaljot Singh Mathoda', 'Yadhu Choudhary', 'Kabir Singh Sidhu', 'Ansh Tiwari'],
-    images: [
-      '/images/C12.png',
-      '/images/C12_1.png'
-  ],
     subMilestones: [
       { id: '12-1', title: 'Added an empty Games Screen linked to the bottom navigation bar.', completed: true, assignee: 'Manav Bansal' },
       { id: '12-2', title: 'Implemented Change Password option under the Settings section.', completed: true, assignee: 'Akaaljot Singh Mathoda' },
