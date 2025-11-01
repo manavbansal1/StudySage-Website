@@ -55,6 +55,42 @@ const milestones = [
   },
   {
     id: '2',
+    title: 'Built the official StudySage website to showcase the app’s concept, progress, and team contributions.',
+    description: 'The site was built using Next.js and Tailwind CSS, featuring sections for the Home Page, Idea Overview, Progress Timeline, and Team Profiles.',
+    date: 'Oct 17, 2025',
+    status: 'completed' as const,
+    progress: 100,
+    tags: ['⚙️Next.js', '🎨Tailwind CSS', '⚛️React', '🚀Vercel'],
+    team: ['ManavBansal','Akaaljot Singh Mathoda','Ansh Tiwari','Kabir Sidhu', 'Yadhu Choudhary'],
+    links: [
+      { label: 'GitHub Repository', url: 'https://github.com/manavbansal1/studysage-website' }
+    ],
+    images: [
+    ],
+    subMilestones: [
+      { 
+        id: '2-1', 
+        title: 'Initialized Next.js project and configured base layout with Tailwind CSS', 
+        completed: true, 
+        assignee: 'TBD'
+      },
+      { 
+        id: '2-2', 
+        title: 'Developed main pages: Home, Idea, Progress, and Team', 
+        completed: true, 
+        assignee: 'TBD'
+      },
+      { 
+        id: '2-3', 
+        title: 'Deployed the website on Vercel for public access', 
+        completed: true, 
+        assignee: 'TBD'
+      },
+    ],
+    notes: 'Designed feature-rich pages with animations and gradient styling. Integrated icons using Lucide React for visual enhancement.'
+  },
+  {
+    id: '3',
     title: 'Implemented Home Screen, Navigation Structure & Sign-in Sign-out functionality using Firebase',
     description: 'Developed the home screen UI, set up navigation between screens, and integrated user authentication with sign-in and sign-out features.',
     date: 'Oct 18, 2025',
@@ -69,7 +105,7 @@ const milestones = [
     ],
     subMilestones: [
       { 
-        id: '2-1', 
+        id: '3-1', 
         title: 'Initialized Android project with Jetpack Compose', 
         completed: true, 
         assignee: 'TBD',
@@ -78,7 +114,7 @@ const milestones = [
         ]
       },
       { 
-        id: '2-2', 
+        id: '3-2', 
         title: 'Designed a composable HomeScreen() showing key options: Upload Notes, Quiz, and Games.', 
         completed: true, 
         assignee: 'TBD',
@@ -90,7 +126,7 @@ const milestones = [
         ]
       },
       { 
-        id: '2-3', 
+        id: '3-3', 
         title: 'Integrate user authentication with sign-in and sign-out functionality', 
         completed: true, 
         assignee: 'TBD',
@@ -103,7 +139,7 @@ const milestones = [
     notes: 'Home screen UI is functional with navigation working smoothly. Authentication flows are integrated using Firebase Auth.'
   },
   {
-    id: '3',
+    id: '4',
     title: 'Added App Icon & Began AI Notes Summary Integration',
     description: 'Added a custom launcher icon, and began initial development of the AI-powered Notes Summary feature using the Gemini API.',
     date: 'October 20, 2025',
@@ -117,7 +153,7 @@ const milestones = [
     ],
     subMilestones: [
       { 
-        id: '3-1', 
+        id: '4-1', 
         title: 'Designed app icon', 
         completed: true, 
         assignee: 'Manav Bansal',
@@ -129,7 +165,7 @@ const milestones = [
         ]
       },
       { 
-        id: '3-2', 
+        id: '4-2', 
         title: 'Created base structure & placeholder functions for the AI notes summarization module.', 
         completed: true, 
         assignee: 'Ansh Tiwari',
@@ -142,7 +178,7 @@ const milestones = [
     notes: 'App icon added successfully. Initial groundwork for AI Notes Summary feature laid out, but full integration with Gemini API is pending.'
   },
   {
-    id: '4',
+    id: '5',
     title: 'Implemented Profile Page & Integrated Cloudinary',
     description: 'Developed a fully functional Profile Page displaying user information, levels, XP, and streak data.',
     date: 'October 21, 2025',
@@ -155,7 +191,7 @@ const milestones = [
     ],
     subMilestones: [
       { 
-        id: '4-1', 
+        id: '5-1', 
         title: 'Created a visually rich and responsive Profile Screen using Jetpack Compose.', 
         completed: true, 
         assignee: 'Kabir Singh Sidhu',
@@ -167,7 +203,7 @@ const milestones = [
         ]
       },
       { 
-        id: '4-2', 
+        id: '5-2', 
         title: 'Displayed user data such as Name, Email, About Section, Level, XP, and Streak.', 
         completed: true, 
         assignee: 'Akaaljot Singh Mathoda',
@@ -176,7 +212,7 @@ const milestones = [
         ]
       },
       { 
-        id: '4-3', 
+        id: '5-3', 
         title: 'Integrated Cloudinary API to support image uploads for user avatars.', 
         completed: true, 
         assignee: 'Ansh Tiwari',
@@ -188,37 +224,118 @@ const milestones = [
     notes: 'Added edit option placeholder and tested Cloudinary uploads successfully; ensured consistent gradient theme and responsive design across devices.'
   },
   {
-    id: '5',
+    id: '6',
     title: 'Added Notes Screen & Summarization Feature using Gemini API',
     description: 'Implemented new Notes Screen to fetch and display AI-generated summaries from the database. Currently supports only .txt files, PDF parsing still in progress.',
     date: 'October 22, 2025',
     status: 'completed' as const,
-    progress: 0,
+    progress: 100,
     tags: ['Gemini API (completed)', 'PDF Parsing (in progress)'],
     team: ['Manav Bansal', 'Akaaljot Singh Mathoda', 'Yadhu Choudhary', 'Kabir Singh Sidhu', 'Ansh Tiwari'],
     subMilestones: [
-      { id: '5-1', title: 'Built Notes Screen UI with data binding to NotesViewModel.', completed: true, assignee: 'Manav Bansal' },
-      { id: '5-2', title: 'Integrated summarization logic for text files using Gemini API setup.', completed: true, assignee: 'Yadhu Choudhary' },
-      { id: '5-3', title: 'Connected database to fetch stored notes and summaries.', completed: true, assignee: 'Kabir Singh Sidhu' },
-      { id: '5-4', title: 'Identified and started debugging PDF parsing issue.', completed: true, assignee: 'Akaaljot Singh Mathoda' }
+      { id: '6-1', title: 'Built Notes Screen UI with data binding to NotesViewModel.', completed: true, assignee: 'Manav Bansal' },
+      { id: '6-2', title: 'Integrated summarization logic for text files using Gemini API setup.', completed: true, assignee: 'Yadhu Choudhary' },
+      { id: '6-3', title: 'Connected database to fetch stored notes and summaries.', completed: true, assignee: 'Kabir Singh Sidhu' },
+      { id: '6-4', title: 'Identified and started debugging PDF parsing issue.', completed: true, assignee: 'Akaaljot Singh Mathoda' }
     ],
     notes: 'Currently functional for .txt uploads; PDF extraction under development to support wider note formats.'
   },
   {
-    id: '6',
+    id: '7',
     title: 'Fixed PDF Parsing & Expanded File Support',
     description: 'Resolved the PDF parsing error, ensuring accurate extraction of text, tags, and summaries. Enhanced the Notes Screen to display note format indicators (PDF, TXT, DOC, DOCX).',
     date: 'October 23, 2025',
     status: 'completed' as const,
-    progress: 0,
+    progress: 100,
     tags: ['PDF Parsing (completed)', 'File I/O'],
     team: ['Manav Bansal', 'Akaaljot Singh Mathoda', 'Yadhu Choudhary', 'Kabir Singh Sidhu', 'Ansh Tiwari'],
     subMilestones: [
-      { id: '6-1', title: 'Fixed parsing logic for PDFs using improved text extraction pipeline.', completed: true, assignee: 'Manav Bansal' },
-      { id: '6-2', title: 'Added compatibility for DOC, DOCX file uploads and summaries.', completed: true, assignee: 'Akaaljot Singh Mathoda' },
-      { id: '6-3', title: 'Updated Notes UI to visually show file type labels for each entry.', completed: true,assignee: 'Ansh Tiwari' }
+      { id: '7-1', title: 'Fixed parsing logic for PDFs using improved text extraction pipeline.', completed: true, assignee: 'Manav Bansal' },
+      { id: '7-2', title: 'Added compatibility for DOC, DOCX file uploads and summaries.', completed: true, assignee: 'Akaaljot Singh Mathoda' },
+      { id: '7-3', title: 'Updated Notes UI to visually show file type labels for each entry.', completed: true,assignee: 'Ansh Tiwari' }
     ],
     notes: 'PDF, TXT and DOC summarization now fully functional; validated with diverse document samples for reliability and tag accuracy.'
+  },
+  {
+    id: '8',
+    title: 'Implemented Basic Group Chat Functionality',
+    description: 'Introduced a Group Chat feature allowing users to create and manage study groups, view members, add new participants, and delete groups.',
+    date: 'October 24, 2025',
+    status: 'completed' as const,
+    progress: 100,
+    team: ['Manav Bansal', 'Akaaljot Singh Mathoda', 'Yadhu Choudhary', 'Kabir Singh Sidhu', 'Ansh Tiwari'],
+    subMilestones: [
+      { id: '8-1', title: 'Implemented menu options: View Members, Add Member, and Delete Group.', completed: true, assignee: 'Manav Bansal' },
+      { id: '8-2', title: 'Created dynamic group info header showing group name and member count.', completed: true, assignee: 'Akaaljot Singh Mathoda' },
+      { id: '8-3', title: 'Prepared structure for future real-time chat updates and Firebase integration.', completed: true,assignee: 'Ansh Tiwari' }
+    ],
+    notes: 'Chat interface and group management options are functional; next step is enabling real-time message exchange using Firebase Realtime Database.'
+  },
+  {
+    id: '9',
+    title: 'Implemented Courses Page with Add & Filter Features',
+    description: 'Developed the Courses Page that allows users to view, add, and filter their enrolled courses.',
+    date: 'October 25, 2025',
+    status: 'completed' as const,
+    progress: 100,
+    team: ['Manav Bansal', 'Akaaljot Singh Mathoda', 'Yadhu Choudhary', 'Kabir Singh Sidhu', 'Ansh Tiwari'],
+    subMilestones: [
+      { id: '9-1', title: 'Built Courses Screen UI with course cards showing course code, instructor, and credits.', completed: true, assignee: 'Manav Bansal' },
+      { id: '9-2', title: 'Implemented Add Course Dialog to input course name, code, instructor, and credit hours.', completed: true, assignee: 'Akaaljot Singh Mathoda' },
+      { id: '9-3', title: 'Added Semester and Year dropdown filters for easy course organization.', completed: true,assignee: 'Ansh Tiwari' }
+    ],
+    notes: 'Course filtering works seamlessly across multiple semesters and years.'
+  },
+  {
+    id: '10',
+    title: 'Revamped Theme & Enhanced Home, Groups, and Profile Screens',
+    description: 'Introduced a new dark purple theme across the app for a modern, cohesive look. Enhanced the Home, Groups, and Profile pages with improved layouts and new functionality, focusing on user engagement and navigation flow.',
+    date: 'October 25, 2025',
+    status: 'completed' as const,
+    progress: 100,
+    team: ['Manav Bansal', 'Akaaljot Singh Mathoda', 'Yadhu Choudhary', 'Kabir Singh Sidhu', 'Ansh Tiwari'],
+    subMilestones: [
+      { id: '10-1', title: 'Applied a unified dark gradient theme throughout the app for consistency.', completed: true, assignee: 'Manav Bansal' },
+      { id: '10-2', title: 'Added Quick Actions on the Home Page: Flashcards, Take Quiz, Study Groups, and Games.', completed: true, assignee: 'Akaaljot Singh Mathoda' },
+      { id: '10-3', title: 'Updated Profile Page with editable sections, profile customization options, and improved stats display.', completed: true,assignee: 'Ansh Tiwari' },
+      { id: '10-4', title: 'Enhanced Groups Page UI with real-time status indicators and streamlined navigation for creating and managing groups.', completed: true,assignee: 'Ansh Tiwari' },
+      { id: '10-5', title: 'Optimized component spacing, iconography, and color contrast for better readability.', completed: true,assignee: 'Ansh Tiwari' }
+    ],
+    notes: 'New theme improves overall UI harmony and accessibility. Quick Actions increase usability by giving instant access to core app features.'
+  },
+  {
+    id: '11',
+    title: 'Enhanced Home UI with Theme Support & Navbar Redesign',
+    description: 'Updated the Home Page UI for improved light and dark mode compatibility and refined layout consistency.',
+    date: 'October 26, 2025',
+    status: 'completed' as const,
+    progress: 100,
+    team: ['Manav Bansal', 'Akaaljot Singh Mathoda', 'Yadhu Choudhary', 'Kabir Singh Sidhu', 'Ansh Tiwari'],
+    subMilestones: [
+      { id: '11-1', title: 'Added full light and dark mode support for the Home screen and its components', completed: true, assignee: 'Manav Bansal' },
+      { id: '11-2', title: 'Implemented glass-like navbar for smoother transitions.', completed: true, assignee: 'Akaaljot Singh Mathoda' },
+      { id: '11-3', title: 'Added success overlay for course addition confirmation.', completed: true,assignee: 'Ansh Tiwari' }
+    ],
+    notes: 'UI is now fully adaptive across themes and orientations. The glass-effect navbar provides a premium look, improving overall user interaction fluidity.'
+  },
+  {
+    id: '12',
+    title: 'Added Games Page & Password Management Option',
+    description: 'Introduced a new Games Page placeholder for future interactive learning modules. Updated the Profile Page with layout refinements and added a Change Password option to improve account management and security.',
+    date: 'October 28, 2025',
+    status: 'completed' as const,
+    progress: 100,
+    team: ['Manav Bansal', 'Akaaljot Singh Mathoda', 'Yadhu Choudhary', 'Kabir Singh Sidhu', 'Ansh Tiwari'],
+    images: [
+      '/images/C12.png',
+      '/images/C12_1.png'
+  ],
+    subMilestones: [
+      { id: '12-1', title: 'Added an empty Games Screen linked to the bottom navigation bar.', completed: true, assignee: 'Manav Bansal' },
+      { id: '12-2', title: 'Implemented Change Password option under the Settings section.', completed: true, assignee: 'Akaaljot Singh Mathoda' },
+      { id: '12-3', title: 'Minor UI polishing and alignment fixes for consistency across pages.', completed: true,assignee: 'Ansh Tiwari' }
+    ],
+    notes: 'Game screen structure prepared for future mini-games. Password update flow integrated with Firebase Auth to allow secure account modifications.'
   }
 ];
 
