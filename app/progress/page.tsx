@@ -417,6 +417,7 @@ const milestones = [
   {
     id: '14',
     title: 'The current Games Section is a placeholder; future updates will introduce fully functional games',
+    description: '',
     date: 'TBD',
     status: 'in-progress' as const,
     progress: 0,
@@ -425,6 +426,7 @@ const milestones = [
   {
     id: '15',
     title: 'Develop Games Module with options for both single-player and multiplayer modes.',
+    description: '',
     date: 'TBD',
     status: 'in-progress' as const,
     progress: 0,
