@@ -71,7 +71,8 @@ export default function Home() {
                 </a>
                 
                 <a
-                  href="/downloads/studysage.apk"
+                  href="/assets/studysage.apk"
+                  download="studysage.apk"
                   className="group px-6 py-3 rounded-lg bg-[#8b5cf6]/10 dark:bg-[#8b5cf6]/20 text-[#652497] dark:text-purple-300 font-semibold flex items-center justify-center gap-2 border border-[#8b5cf6]/30 dark:border-[#8b5cf6]/40 hover:bg-[#8b5cf6]/20 dark:hover:bg-[#8b5cf6]/30 smooth-transition"
                 >
                   <Download className="w-5 h-5" />
