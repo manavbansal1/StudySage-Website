@@ -1,13 +1,16 @@
 'use client';
 import { useState } from 'react';
-import { ChevronDown, ChevronUp, CheckCircle2, Circle, Calendar, Users, Tag, ExternalLink, Github, FileText, Image as ImageIcon, MessageSquare} from 'lucide-react';
+import { ChevronDown, ChevronUp, CheckCircle2, Circle, Calendar, Users, Tag, ExternalLink, Github, FileText, Image as ImageIcon, MessageSquare, Smartphone} from 'lucide-react';
 import Image from 'next/image';
+import MobileFrame from './MobileFrame';
+import '../styles/MobileFrame.css';
 
 interface SubMilestone {
   id: string;
   title: string;
   completed: boolean;
   assignee?: string;
+  date?: string;
   notes?: string[];
   images?: string[];
 }
@@ -37,6 +40,15 @@ interface SubMilestoneItemProps {
   index: number;
 }
 
+// Helper function to check if an image is an app screenshot (should use mobile frame)
+const isAppScreenshot = (imagePath: string): boolean => {
+  return imagePath.includes('/screenshots/') || 
+         imagePath.includes('/images/C12') ||
+         imagePath.includes('games-navigation') || 
+         imagePath.includes('profile-page') || 
+         imagePath.includes('profile-stats');
+};
+
 // Sub-milestone component
 function SubMilestoneItem({ subMilestone, index }: SubMilestoneItemProps) {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -63,12 +75,20 @@ function SubMilestoneItem({ subMilestone, index }: SubMilestoneItemProps) {
               <p className={`font-medium ${subMilestone.completed ? 'text-gray-500 dark:text-gray-400 line-through' : 'text-gray-700 dark:text-gray-300'}`}>
                 {subMilestone.title}
               </p>
-              {subMilestone.assignee && (
-                <p className="text-sm text-gray-500 dark:text-gray-400 mt-1 flex items-center gap-1.5">
-                  <Users className="w-3 h-3" />
-                  {subMilestone.assignee}
-                </p>
-              )}
+              <div className="flex flex-wrap items-center gap-3 mt-1">
+                {subMilestone.assignee && (
+                  <span className="text-sm text-gray-500 dark:text-gray-400 flex items-center gap-1.5">
+                    <Users className="w-3 h-3" />
+                    {subMilestone.assignee}
+                  </span>
+                )}
+                {subMilestone.date && (
+                  <span className="text-sm text-gray-500 dark:text-gray-400 flex items-center gap-1.5">
+                    <Calendar className="w-3 h-3" />
+                    {subMilestone.date}
+                  </span>
+                )}
+              </div>
             </div>
             
             {hasExpandableContent && (
@@ -119,23 +139,31 @@ function SubMilestoneItem({ subMilestone, index }: SubMilestoneItemProps) {
               {/* Sub-images */}
               {subMilestone.images && subMilestone.images.length > 0 && (
                 <div>
-                  <h5 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2 flex items-center gap-1.5">
-                    <ImageIcon className="w-4 h-4 text-[#652497] dark:text-purple-400" />
-                    Screenshots
+                  <h5 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-4 flex items-center gap-1.5">
+                    <Smartphone className="w-4 h-4 text-[#652497] dark:text-purple-400" />
+                    App Screenshots
                   </h5>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  <div className="flex flex-wrap justify-center gap-8">
                     {subMilestone.images.map((image, idx) => (
-                      <div 
-                        key={idx}
-                        className="relative aspect-video rounded-lg overflow-hidden border border-gray-200 dark:border-slate-600 hover:border-[#652497]/40 dark:hover:border-[#652497]/60 smooth-transition group"
-                      >
-                        <Image
-                          src={image}
+                      isAppScreenshot(image) ? (
+                        <MobileFrame
+                          key={idx}
+                          image={image}
                           alt={`${subMilestone.title} - Screenshot ${idx + 1}`}
-                          fill
-                          className="object-cover group-hover:scale-105 smooth-transition-slow"
                         />
-                      </div>
+                      ) : (
+                        <div 
+                          key={idx}
+                          className="relative aspect-video rounded-lg overflow-hidden border border-gray-200 dark:border-slate-600 hover:border-[#652497]/40 dark:hover:border-[#652497]/60 smooth-transition group"
+                        >
+                          <Image
+                            src={image}
+                            alt={`${subMilestone.title} - Screenshot ${idx + 1}`}
+                            fill
+                            className="object-cover group-hover:scale-105 smooth-transition-slow"
+                          />
+                        </div>
+                      )
                     ))}
                   </div>
                 </div>
@@ -302,8 +330,8 @@ export default function Milestone({ milestone, index }: MilestoneProps) {
                 }}
                 className="text-[#652497] dark:text-purple-400 font-medium flex items-center gap-1 hover:text-[#7c3aed] dark:hover:text-purple-300 hover:bg-[#ede9fe] dark:hover:bg-[#3b0764] transition-colors duration-200 ease-in-out rounded-md px-2 py-1 cursor-pointer"
                 type="button"
-                >
-                Click to expand
+              >
+                View detailed tasks
               </button>
             </div>
           </div>
@@ -327,26 +355,35 @@ export default function Milestone({ milestone, index }: MilestoneProps) {
               </div>
             )}
 
-            {/* Images */}
+            {/* Images - Display app screenshots in mobile frames */}
             {milestone.images && milestone.images.length > 0 && (
               <div>
-                <h4 className="text-lg font-bold text-gray-900 dark:text-white mb-3 flex items-center gap-2">
-                  <ImageIcon className="w-5 h-5 text-[#652497] dark:text-purple-400" />
-                  Screenshots & Images
+                <h4 className="text-lg font-bold text-gray-900 dark:text-white mb-6 flex items-center gap-2">
+                  <Smartphone className="w-5 h-5 text-[#652497] dark:text-purple-400" />
+                  App Screenshots
                 </h4>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div className="flex flex-wrap justify-center gap-8">
                   {milestone.images.map((image, idx) => (
-                    <div 
-                      key={idx}
-                      className="relative aspect-video rounded-xl overflow-hidden border border-gray-200 dark:border-slate-700 hover:border-[#652497]/40 dark:hover:border-[#652497]/60 transition-colors group"
-                    >
-                      <Image
-                        src={image}
-                        alt={`${milestone.title} - Image ${idx + 1}`}
-                        fill
-                        className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    isAppScreenshot(image) ? (
+                      <MobileFrame
+                        key={idx}
+                        image={image}
+                        alt={`${milestone.title} - Screenshot ${idx + 1}`}
                       />
-                    </div>
+                    ) : (
+                      <div 
+                        key={idx}
+                        className="relative aspect-video rounded-xl overflow-hidden border border-gray-200 dark:border-slate-700 hover:border-[#652497]/40 dark:hover:border-[#652497]/60 transition-colors group"
+                        style={{ width: '400px', maxWidth: '100%' }}
+                      >
+                        <Image
+                          src={image}
+                          alt={`${milestone.title} - Image ${idx + 1}`}
+                          fill
+                          className="object-cover group-hover:scale-105 transition-transform duration-500"
+                        />
+                      </div>
+                    )
                   ))}
                 </div>
               </div>

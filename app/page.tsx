@@ -85,7 +85,7 @@ export default function Home() {
             <div className="relative hero-image-animate">
               <div className="relative aspect-square rounded-3xl overflow-hidden border-4 border-white dark:border-slate-800 shadow-2xl">
                 <Image
-                  src="https://placehold.co/800x800/652497/FFFFFF/png?text=StudySage+App"
+                  src='/assets/StudySage.png'
                   alt="StudySage App Interface"
                   fill
                   className="object-cover"

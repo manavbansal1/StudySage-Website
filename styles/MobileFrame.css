@@ -1,0 +1,50 @@
+/* Mobile Frame Styles */
+
+.mobile-frame-container {
+  opacity: 0;
+  animation: mobile-fade-in 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  margin: 0 auto;
+}
+
+@keyframes mobile-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Staggered animation for multiple frames */
+.mobile-frame-container:nth-child(1) { animation-delay: 0.1s; }
+.mobile-frame-container:nth-child(2) { animation-delay: 0.2s; }
+.mobile-frame-container:nth-child(3) { animation-delay: 0.3s; }
+.mobile-frame-container:nth-child(4) { animation-delay: 0.4s; }
+
+/* Hover effect for mobile frames */
+.mobile-frame-container:hover .phone-body {
+  transform: translateY(-8px);
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* Better spacing for mobile frame gallery */
+.mobile-frames-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  padding: 2rem 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .mobile-frame-container {
+    transform: scale(0.85);
+  }
+  
+  .mobile-frames-gallery {
+    gap: 2rem;
+  }
+}
