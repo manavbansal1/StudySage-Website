@@ -68,7 +68,7 @@ const teamMembers = [
     name: 'Kabir Singh Sidhu',
     role: 'UI/UX Designer',
     description: 'Creative designer with a passion for user-centered design. Ensures StudySage is not only functional but also delightful to use through thoughtful interfaces and smooth interactions.',
-    image: 'https://placehold.co/400x400/a78bfa/FFFFFF/png?text=EP',
+    image: 'team/kabir.png',
     responsibilities: [
       'UI/UX design for all app screens and features',
       'Creating design systems and component libraries',
@@ -88,7 +88,7 @@ const teamMembers = [
     name: 'Yadhu Choudhary',
     role: 'Backend Developer & DevOps',
     description: 'Infrastructure and backend specialist ensuring StudySage runs smoothly and scales effectively. Manages cloud infrastructure, CI/CD pipelines, and server optimization.',
-    image: 'https://placehold.co/400x400/c4b5fd/FFFFFF/png?text=DK',
+    image: 'team/yadhu.jpeg',
     responsibilities: [
       'Backend API development and optimization',
       'Cloud infrastructure setup (Firebase, AWS)',
