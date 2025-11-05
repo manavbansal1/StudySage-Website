@@ -9,7 +9,7 @@ const teamMembers = [
     name: 'Manav Bansal',
     role: 'Project Lead & Full-Stack Developer',
     description: 'Leading the StudySage project with a passion for educational technology. Specializes in system architecture and ensuring seamless integration between frontend and backend.',
-    image: 'https://placehold.co/400x400/652497/FFFFFF/png?text=AJ',
+    image: '/team/manav.png',
     responsibilities: [
       'Overall project coordination and timeline management',
       'Backend architecture design and API development',

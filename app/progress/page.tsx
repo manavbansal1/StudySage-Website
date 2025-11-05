@@ -61,7 +61,7 @@ const milestones = [
     description: 'The site was built using Next.js and Tailwind CSS, featuring sections for the Home Page, Idea Overview, Progress Timeline, and Team Profiles.',
     date: 'Oct 17, 2025',
     status: 'in-progress' as const,
-    progress: 80,
+    progress: 70,
     tags: ['Next.js', 'Tailwind CSS', 'React', 'Vercel'],
     team: ['Manav Bansal', 'Yadhu Choudhary'],
     links: [
@@ -343,8 +343,8 @@ const milestones = [
     title: 'Added Games Page & Password Management Option',
     description: 'Introduced a new Games Page placeholder for future interactive learning modules. Updated the Profile Page with layout refinements and added a Change Password option to improve account management and security.',
     date: 'October 28, 2025',
-    status: 'completed' as const,
-    progress: 100,
+    status: 'in-progress' as const,
+    progress: 50,
     team: ['Akaaljot Singh Mathoda', 'Ansh Tiwari'],
     images: [
       '/screenshots/C12.png',
@@ -421,7 +421,7 @@ const milestones = [
     date: 'TBD',
     status: 'in-progress' as const,
     progress: 0,
-    team: ['Kabir Singh Sidhu', 'Ansh Tiwari', 'Akaaljot Singh Mathoda', 'Manav Bansal', 'Yadhu Choudhary'],
+    team: ['TBD'],
   },
   {
     id: '15',
@@ -430,7 +430,34 @@ const milestones = [
     date: 'TBD',
     status: 'in-progress' as const,
     progress: 0,
-    team: ['Kabir Singh Sidhu', 'Ansh Tiwari', 'Akaaljot Singh Mathoda', 'Manav Bansal', 'Yadhu Choudhary'],
+    team: ['TBD'],
+  },
+  {
+    id: '16',
+    title: 'Build a Ktor backend for handling WebSocket connections, and secure user data management.',
+    description: '',
+    date: 'TBD',
+    status: 'in-progress' as const,
+    progress: 0,
+    team: ['TBD'],
+  },
+  {
+    id: '17',
+    title: 'Implement Voice-to-Notes AI Feature',
+    description: 'Plan to introduce a voice input feature allowing users to record lectures or discussions directly within the app.',
+    date: 'TBD',
+    status: 'in-progress' as const,
+    progress: 0,
+    tags: ['Gemini API (planned)'],
+    team: ['TBD'],
+    subMilestones: [
+      { 
+        id: '17-1', 
+        title: 'The app will convert speech to text, summarize the content using AI, and automatically generate structured notes', 
+        completed: false, 
+        assignee: 'TBD',
+      }
+    ],
   }
 ];
 
