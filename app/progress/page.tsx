@@ -58,9 +58,9 @@ const milestones = [
     title: 'Built the official StudySage website to showcase the app\'s concept, progress, and team contributions.',
     description: 'The site was built using Next.js and Tailwind CSS, featuring sections for the Home Page, Idea Overview, Progress Timeline, and Team Profiles.',
     date: 'Oct 17, 2025',
-    status: 'completed' as const,
-    progress: 100,
-    tags: ['⚙️Next.js', '🎨Tailwind CSS', '⚛️React', '🚀Vercel'],
+    status: 'In progress' as const,
+    progress: 80,
+    tags: ['Next.js', 'Tailwind CSS', 'React', 'Vercel'],
     team: ['Manav Bansal', 'Yadhu Choudhary'],
     links: [
       { label: 'GitHub Repository', url: 'https://github.com/manavbansal1/studysage-website' }
@@ -242,8 +242,8 @@ const milestones = [
     title: 'Fixed PDF Parsing & Expanded File Support',
     description: 'Resolved the PDF parsing error, ensuring accurate extraction of text, tags, and summaries. Enhanced the Notes Screen to display note format indicators (PDF, TXT, DOC, DOCX).',
     date: 'October 23, 2025',
-    status: 'completed' as const,
-    progress: 100,
+    status: 'In progress' as const,
+    progress: 75,
     tags: ['PDF Parsing (completed)', 'File I/O'],
     team: ['Manav Bansal', 'Akaaljot Singh Mathoda', 'Yadhu Choudhary', 'Kabir Singh Sidhu', 'Ansh Tiwari'],
     images: [
@@ -354,7 +354,6 @@ const milestones = [
         title: 'Added an empty Games Screen linked to the bottom navigation bar.', 
         completed: true, 
         assignee: 'Manav Bansal',
-        images: ['/screenshots/C12.png'],
         notes: [
           'Implemented bottom navigation with Home, Courses, Groups, and Games tabs',
           'Purple gradient theme applied consistently across navigation elements'
@@ -365,7 +364,6 @@ const milestones = [
         title: 'Implemented Change Password option under the Settings section.', 
         completed: true, 
         assignee: 'Akaaljot Singh Mathoda',
-        images: ['/screenshots/C12_1.png'],
         notes: [
           'Added profile customization with avatar display',
           'Integrated Settings section with Change Password and Privacy options'
