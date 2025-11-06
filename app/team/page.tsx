@@ -7,16 +7,15 @@ const teamMembers = [
   {
     id: '1',
     name: 'Manav Bansal',
-    role: 'Project Lead & Full-Stack Developer',
+    role: 'Full-Stack Web Developer',
     description: 'Leading the StudySage project with a passion for educational technology. Specializes in system architecture and ensuring seamless integration between frontend and backend.',
-    image: '/team/manav.png',
+    image: '/team/manav.JPG',
     responsibilities: [
-      'Overall project coordination and timeline management',
-      'Backend architecture design and API development',
-      'Database schema design and optimization',
-      'Code reviews and quality assurance'
+      'Project repository creation, Kotlin environment setup, and initial codebase structure',
+      'Website development and deployment using Next.js, Tailwind CSS, and Vercel',
+      'App icon design and PDF parsing logic implementation',
+      'Theme support (light/dark mode) and UI/UX enhancements with glass-effect navbar'
     ],
-    skills: ['Node.js', 'React', 'Firebase', 'MongoDB', 'System Design', 'Git'],
     social: {
       github: 'https://github.com/manavbansal1',
       linkedin: 'https://linkedin.com/in/manavbansal39',
@@ -27,16 +26,15 @@ const teamMembers = [
   {
     id: '2',
     name: 'Akaaljot Singh Mathoda',
-    role: 'AI/ML Engineer',
-    description: 'AI specialist focusing on natural language processing and machine learning. Responsible for the intelligent flashcard generation system and recommendation algorithms.',
-    image: 'https://placehold.co/400x400/7c3aed/FFFFFF/png?text=SC',
+    role: 'UI/UX Designer & Theme Developer',
+    description: 'Specializes in visual design, theming, and user interface enhancements across the application.',
+    image: '/team/akaal.jpeg',
     responsibilities: [
-      'AI model integration and optimization (GPT-4)',
-      'Prompt engineering for flashcard generation',
-      'Implementing spaced repetition algorithm',
-      'Building recommendation system for personalized learning'
+      'DOC and DOCX file upload compatibility implementation',
+      'Dark purple theme design and application-wide implementation',
+      'Home Page Quick Actions and Profile Page customization features',
+      'Password management, Settings section, and UI consistency improvements'
     ],
-    skills: ['Python', 'TensorFlow', 'OpenAI API', 'NLP', 'Machine Learning', 'Data Analysis'],
     social: {
       github: 'https://github.com/jassa47',
       linkedin: 'https://linkedin.com/in/akaaljot-singh-mathoda-703b04253',
@@ -46,16 +44,15 @@ const teamMembers = [
   {
     id: '3',
     name: 'Ansh Tiwari',
-    role: 'Android Developer',
-    description: 'Mobile development expert crafting beautiful and performant Android experiences. Focuses on creating intuitive UI/UX that makes studying effortless and engaging.',
-    image: 'https://placehold.co/400x400/8b5cf6/FFFFFF/png?text=MR',
+    role: 'UI/UX Developer & AI/ML Engineer',
+    description: 'Focuses on user interface development, profile management, and social features.',
+    image: '/team/ansh.JPG',
     responsibilities: [
-      'Android app development with Kotlin and Jetpack Compose',
-      'Implementing real-time features and WebSocket connections',
-      'Optimizing app performance and battery efficiency',
-      'Building gamification features and quiz battle system'
+      'Profile Page design with Cloudinary API integration for avatar uploads',
+      'Notes UI updates with file type indicators and visual enhancements',
+      'Group Chat functionality with member management features',
+      'Bottom navigation bar, Games Page placeholder, and navigation transitions'
     ],
-    skills: ['Kotlin', 'Android SDK', 'Jetpack Compose', 'Material Design', 'Socket.io', 'Firebase'],
     social: {
       github: 'https://github.com/candyragi',
       linkedin: 'https://linkedin.com/in/ansh-tiwari-a19986202/',
@@ -66,14 +63,14 @@ const teamMembers = [
   {
     id: '4',
     name: 'Kabir Singh Sidhu',
-    role: 'UI/UX Designer',
-    description: 'Creative designer with a passion for user-centered design. Ensures StudySage is not only functional but also delightful to use through thoughtful interfaces and smooth interactions.',
-    image: 'team/kabir.png',
+    role: 'Lead Android Developer & AI Integration Specialist',
+    description: 'Core developer focusing on Android app development, UI implementation, and AI feature integration.',
+    image: 'team/kabir.JPG',
     responsibilities: [
-      'UI/UX design for all app screens and features',
-      'Creating design systems and component libraries',
-      'User research and usability testing',
-      'Designing marketing materials and brand identity'
+      'Android project initialization with Jetpack Compose and navigation structure',
+      'Firebase Authentication integration for sign-in/sign-out functionality',
+      'Gemini API integration for AI-powered notes summarization (TXT, PDF formats)',
+      'Courses Page development with add/filter features and PDF download implementation'
     ],
     skills: ['Figma', 'Adobe XD', 'User Research', 'Prototyping', 'Design Systems', 'Illustration'],
     social: {
@@ -86,16 +83,15 @@ const teamMembers = [
   {
     id: '5',
     name: 'Yadhu Choudhary',
-    role: 'Backend Developer & DevOps',
-    description: 'Infrastructure and backend specialist ensuring StudySage runs smoothly and scales effectively. Manages cloud infrastructure, CI/CD pipelines, and server optimization.',
+    role: 'Full-Stack Web Developer & Content Manager',
+    description: 'Responsible for website content, design polish, and user experience improvements.',
     image: 'team/yadhu.jpeg',
     responsibilities: [
-      'Backend API development and optimization',
-      'Cloud infrastructure setup (Firebase, AWS)',
-      'CI/CD pipeline implementation',
-      'Database management and security'
+      'Replacing placeholder content with real information and team profiles',
+      'Adding images and visual content to the website',
+      'Error fixes and bug resolution across the website',
+      'Improving website responsiveness and UI/UX design polish'
     ],
-    skills: ['Node.js', 'Express', 'Docker', 'AWS', 'Firebase', 'PostgreSQL', 'Redis'],
     social: {
       github: 'https://github.com/yadhuuu1110',
       linkedin: 'https://linkedin.com/in/yadhu-choudhary-744b98380',
@@ -135,7 +131,7 @@ export default function TeamPage() {
           <div className="group-photo-container max-w-4xl mx-auto mb-12">
             <div className="relative aspect-[16/9] rounded-3xl overflow-hidden border-4 border-white dark:border-slate-800 shadow-2xl">
               <Image
-                src="https://placehold.co/1200x675/652497/FFFFFF/png?text=StudySage+Team"
+                src="/team/group.jpg"
                 alt="StudySage Team"
                 fill
                 className="object-cover"

@@ -274,7 +274,7 @@ export default function Home() {
             {/* Team Photo */}
             <div className="relative aspect-video rounded-2xl overflow-hidden border-4 border-white/20 shadow-xl">
               <Image
-                src="https://placehold.co/800x450/FFFFFF/652497/png?text=Our+Team"
+                src="/team/group.jpg"
                 alt="StudySage Team"
                 fill
                 className="object-cover"
