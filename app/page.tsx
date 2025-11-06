@@ -329,13 +329,6 @@ export default function Home() {
               Explore Our Vision
               <ArrowRight className="w-5 h-5" />
             </Link>
-            
-            <Link
-              href="/about"
-              className="px-8 py-4 rounded-xl bg-white dark:bg-slate-800 text-[#652497] dark:text-purple-400 font-bold text-lg border-2 border-[#652497]/30 dark:border-[#652497]/50 hover:border-[#652497] dark:hover:border-[#652497] button-smooth"
-            >
-              Learn More
-            </Link>
           </div>
         </div>
       </section>
