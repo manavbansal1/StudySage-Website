@@ -416,49 +416,285 @@ const milestones = [
   },
   {
     id: '14',
-    title: 'The current Games Section is a placeholder; future updates will introduce fully functional games',
-    description: '',
-    date: 'TBD',
+    title: 'Built a basic UI for the Games Page with interactive placeholders',
+    description: 'Added the initial layout structure for upcoming game modes and integrated visual elements matching the existing purple theme.',
+    date: 'November 8, 2025',
     status: 'in-progress' as const,
-    progress: 0,
-    team: ['TBD'],
+    progress: 35,
+    team: ['Ansh Tiwari'],
+    subMilestones: [
+      { 
+        id: '14-1', 
+        title: 'Implemented Host & Join Game overlay components', 
+        completed: true, 
+        assignee: 'Ansh Tiwari',
+      },
+      { 
+        id: '14-2', 
+        title: 'Added real-time listener for group invites in Groups Page', 
+        completed: true, 
+        assignee: 'Ansh Tiwari',
+      }
+    ],
+    notes: 'The Games section now has a solid UI foundation with functional overlays, preparing the app for upcoming real-time multiplayer study games. The addition of a real-time invite listener significantly improves group dynamics, making collaboration feel more seamless and connected.'
   },
   {
     id: '15',
-    title: 'Develop Games Module with options for both single-player and multiplayer modes.',
-    description: '',
-    date: 'TBD',
-    status: 'in-progress' as const,
-    progress: 0,
-    team: ['TBD'],
+    title: 'Added Basic App Permissions for Core Features',
+    description: 'Implemented permission requests for essential app functionalities including storage access for note uploads and downloads, and notification permissions for study reminders and group chat alerts.',
+    date: 'November 10, 2025',
+    status: 'completed' as const,
+    progress: 100,
+    team: ['Yadhu Choudhary'],
+    subMilestones: [
+      { 
+        id: '15-1', 
+        title: 'Integrated Media Permissions (Photos, Videos, Files)', 
+        completed: true, 
+        assignee: 'Yadhu Choudhary',
+      },
+      { 
+        id: '15-2', 
+        title: 'Added Audio Recording & Playback Permissions', 
+        completed: true, 
+        assignee: 'Yadhu Choudhary',
+      }
+    ],
+    notes: 'These permissions form the foundation for future features like voice notes, media uploads, and notification-driven experiences. By adding secure runtime checks, the app now handles user privacy more responsibly while preparing for advanced functionality.'
   },
   {
     id: '16',
-    title: 'Build a Ktor backend for handling WebSocket connections, and secure user data management.',
-    description: '',
-    date: 'TBD',
+    title: 'Added Basic Quiz Structure & Game Generation Files',
+    description: 'Set up the foundational architecture for quiz generation and gameplay, preparing the app for upcoming interactive learning experiences.',
+    date: 'November 10, 2025',
     status: 'in-progress' as const,
-    progress: 0,
-    team: ['TBD'],
-  },
-  {
-    id: '17',
-    title: 'Implement Voice-to-Notes AI Feature',
-    description: 'Plan to introduce a voice input feature allowing users to record lectures or discussions directly within the app.',
-    date: 'TBD',
-    status: 'in-progress' as const,
-    progress: 0,
-    tags: ['Gemini API (planned)'],
-    team: ['TBD'],
+    progress: 10,
+    team: ['Kabir Singh Sidhu'],
     subMilestones: [
       { 
-        id: '17-1', 
-        title: 'The app will convert speech to text, summarize the content using AI, and automatically generate structured notes', 
-        completed: false, 
-        assignee: 'TBD',
+        id: '16-1', 
+        title: 'Created base quiz data models and structure', 
+        completed: true, 
+        assignee: 'Kabir Singh Sidhu',
+      },
+      { 
+        id: '16-2', 
+        title: 'Added all essential files required for AI-powered game generation', 
+        completed: true, 
+        assignee: 'Kabir Singh Sidhu',
       }
     ],
-  }
+    notes: 'This enables future development of dynamic quiz games that leverage AI to create personalized learning experiences based on user notes.'
+  },
+{
+  id: '17',
+  title: 'Flashcards Placeholder & AI Flashcard Generation Integrated',
+  description: 'Introduced a temporary Flashcards UI placeholder and integrated the feature with Gemini to auto-generate flashcard data from notes.',
+  date: 'November 11, 2025',
+  status: 'in-progress' as const,
+  progress: 80,
+  tags: ['Gemini API'],
+  team: ['Yadhu Choudhary'],
+  subMilestones: [
+    { 
+      id: '17-1', 
+      title: 'Added Flashcards placeholder UI to the app', 
+      completed: true, 
+      assignee: 'Yadhu Choudhary',
+    },
+    { 
+      id: '17-2', 
+      title: 'Implemented flashcard generation via Gemini using uploaded notes', 
+      completed: true, 
+      assignee: 'Yadhu Choudhary',
+    }
+  ],
+  notes: 'When a note is processed, its content is sent to Gemini which returns structured flashcard data. These flashcards are then displayed through an interactive UI in the app.'
+},
+{
+  id: '18',
+  title: 'Added NFC Note Sharing Page & Navigation',
+  description: 'Implemented NFC-based note sharing using hosted NFC for the sender and system NFC for the receiver, enabling fast note transfers between devices.',
+  date: 'November 12, 2025',
+  status: 'in-progress' as const,
+  progress: 65,
+  tags: ['NFC', 'HEC'],
+  team: ['Ansh Tiwari'],
+  subMilestones: [
+    { 
+      id: '18-1', 
+      title: 'Created NFC page with sending & receiving placeholders', 
+      completed: true, 
+      assignee: 'Ansh Tiwari',
+    },
+    { 
+      id: '18-2', 
+      title: 'Implemented navigation flow for NFC-based note sharing', 
+      completed: true, 
+      assignee: 'Ansh Tiwari',
+    },
+    { 
+      id: '18-3', 
+      title: 'Integrated HEC-based NFC hosting and standard NFC receiving', 
+      completed: true, 
+      assignee: 'Ansh Tiwari',
+    }
+  ],
+  notes: 'The feature sets the groundwork for seamless device-to-device sharing, allowing users to instantly exchange notes through NFC technology.'
+},
+{
+  id: '19',
+  title: 'Multiplayer Game System with WebSocket Support',
+  description: 'Introduced real-time multiplayer capabilities and built the standalone quiz game using WebSockets.',
+  date: 'November 14, 2025',
+  status: 'in-progress' as const,
+  progress: 70,
+  tags: ['WebSocket', 'Multiplayer Gaming'],
+  team: ['Manav Bansal'],
+  subMilestones: [
+    { 
+      id: '19-1', 
+      title: 'Implemented WebSocket architecture for multiplayer gameplay', 
+      completed: true, 
+      assignee: 'Manav Bansal',
+    },
+    { 
+      id: '19-2', 
+      title: 'Added standalone quiz game mode using real-time game events', 
+      completed: true,
+      assignee: 'Manav Bansal',
+    }
+  ],
+  notes: 'This system allows multiple users to join quiz games simultaneously, enhancing the interactive learning experience through competitive gameplay.'
+},
+{
+  id: '20',
+  title: 'Profile Screen Improvements & Day Streak Feature',
+  description: 'Enhanced the profile experience with visual improvements, added day streak tracking, and improved navigation from recent PDFs.',
+  date: 'November 16, 2025',
+  status: 'completed' as const,
+  progress: 100,
+  team: ['Akaaljot Singh Mathoda'],
+  subMilestones: [
+    { 
+      id: '20-1', 
+      title: 'Implemented day streak system in profile', 
+      completed: true, 
+      assignee: 'Akaaljot Singh Mathoda',
+    },
+    { 
+      id: '20-2', 
+      title: 'Enabled navigation to relevant course from recently opened PDFs', 
+      completed: true, 
+      assignee: 'Akaaljot Singh Mathoda',
+    },
+    { 
+      id: '20-3', 
+      title: 'Made general UI enhancements for consistency', 
+      completed: true,
+      assignee: 'Akaaljot Singh Mathoda',
+    }
+  ],
+  notes: 'The profile section now feels more dynamic and informative, helping users track streaks and jump back into their study materials quickly.'
+},
+{
+  id: '21',
+  title: 'Games Page UI Enhancements & Quiz Timer',
+  description: 'Improved the visual and functional design of the Games Page and added a 30-second timer to the quiz game flow.',
+  date: 'November 21, 2025',
+  status: 'in-progress' as const,
+  progress: 70,
+  team: ['Kabir Singh Sidhu'],
+  subMilestones: [
+    { 
+      id: '21-1', 
+      title: 'Enhanced the Games Page UI with interactive elements', 
+      completed: true, 
+      assignee: 'Kabir Singh Sidhu',
+    },
+    { 
+      id: '21-2', 
+      title: 'Added 30-second countdown timer for quiz games', 
+      completed: true, 
+      assignee: 'Kabir Singh Sidhu',
+    }
+  ],
+  notes: 'These updates make the gameplay experience more structured and visually appealing, improving player engagement during quiz rounds.'
+},
+{
+  id: '22',
+  title: 'Recently Opened PDFs Screen & Quick Actions Enhancements',
+  description: 'Added a dedicated screen for recently opened PDFs, quick quizzes, and quick flashcards in the Home tab.',
+  date: 'November 21, 2025',
+  status: 'completed' as const,
+  progress: 100,
+  team: ['Akaaljot Singh Mathoda'],
+  subMilestones: [
+    { 
+      id: '22-1', 
+      title: 'Added Recently Opened PDFs screen', 
+      completed: true, 
+      assignee: 'Akaaljot Singh Mathoda',
+    },
+    { 
+      id: '22-2', 
+      title: 'Implemented Clear All option for Recently Opened PDFs', 
+      completed: true, 
+      assignee: 'Akaaljot Singh Mathoda',
+    },
+    { 
+      id: '22-3', 
+      title: 'Integrated Quick Quiz and Quick Flashcards in Home Quick Actions', 
+      completed: true,
+      assignee: 'Akaaljot Singh Mathoda',
+    }
+  ],
+  notes: 'These productivity additions make it easier for users to quickly revise materials and access their frequently opened PDFs.'
+},
+{
+  id: '23',
+  title: 'Study-Tac-Toe Game Added',
+  description: 'Developed and integrated a Study-Tac-Toe game — a competitive, learning-focused twist on the classic tic-tac-toe concept.',
+  date: 'November 22, 2025',
+  status: 'in-progress' as const,
+  progress: 75,
+  tags: ['WebSocket', 'Game Development'],
+  team: ['Manav Bansal'],
+  subMilestones: [
+    { 
+      id: '23-1', 
+      title: 'Implemented core Study-Tac-Toe gameplay mechanics', 
+      completed: true, 
+      assignee: 'Manav Bansal',
+    }
+  ],
+  notes: 'This new game mode introduces a fun and interactive approach to learning, merging strategy gameplay with study concepts.'
+},
+{
+  id: '24',
+  title: 'Podcasts Feature for Notes',
+  description: 'Enabled users to convert notes into podcasts using Gemini for script generation and Google Cloud TTS for audio playback.',
+  date: 'November 22, 2025',
+  status: 'in-progress' as const,
+  progress: 85,
+  tags: ['Gemini API', 'Google Cloud TTS'],
+  team: ['Yadhu Choudhary'],
+  subMilestones: [
+    { 
+      id: '24-1', 
+      title: 'Created pipeline from notes → Gemini → Google TTS', 
+      completed: true, 
+      assignee: 'Yadhu Choudhary',
+    },
+    { 
+      id: '24-2', 
+      title: 'Implemented podcast playback UI in-app', 
+      completed: true, 
+      assignee: 'Yadhu Choudhary',
+    }
+  ],
+  notes: 'Users can now listen to their uploaded documents like audio lessons, making studying more accessible and hands-free.'
+}
 ];
 
 export default function ProgressPage() {
