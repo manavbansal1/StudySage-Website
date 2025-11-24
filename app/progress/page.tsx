@@ -61,7 +61,7 @@ const milestones = [
     description: 'The site was built using Next.js and Tailwind CSS, featuring sections for the Home Page, Idea Overview, Progress Timeline, and Team Profiles.',
     date: 'Oct 17, 2025',
     status: 'in-progress' as const,
-    progress: 70,
+    progress: 85,
     tags: ['Next.js', 'Tailwind CSS', 'React', 'Vercel'],
     team: ['Manav Bansal', 'Yadhu Choudhary'],
     links: [
@@ -343,8 +343,8 @@ const milestones = [
     title: 'Added Games Page & Password Management Option',
     description: 'Introduced a new Games Page placeholder for future interactive learning modules. Updated the Profile Page with layout refinements and added a Change Password option to improve account management and security.',
     date: 'October 28, 2025',
-    status: 'in-progress' as const,
-    progress: 50,
+    status: 'completed' as const,
+    progress: 100,
     team: ['Akaaljot Singh Mathoda', 'Ansh Tiwari'],
     images: [
       '/screenshots/C12.png',
@@ -419,8 +419,8 @@ const milestones = [
     title: 'Built a basic UI for the Games Page with interactive placeholders',
     description: 'Added the initial layout structure for upcoming game modes and integrated visual elements matching the existing purple theme.',
     date: 'November 8, 2025',
-    status: 'in-progress' as const,
-    progress: 35,
+    status: 'completed' as const,
+    progress: 100,
     team: ['Ansh Tiwari'],
     subMilestones: [
       { 
@@ -491,8 +491,8 @@ const milestones = [
   title: 'Flashcards Placeholder & AI Flashcard Generation Integrated',
   description: 'Introduced a temporary Flashcards UI placeholder and integrated the feature with Gemini to auto-generate flashcard data from notes.',
   date: 'November 11, 2025',
-  status: 'in-progress' as const,
-  progress: 80,
+  status: 'completed' as const,
+  progress: 100,
   tags: ['Gemini API'],
   team: ['Yadhu Choudhary'],
   subMilestones: [
@@ -516,8 +516,8 @@ const milestones = [
   title: 'Added NFC Note Sharing Page & Navigation',
   description: 'Implemented NFC-based note sharing using hosted NFC for the sender and system NFC for the receiver, enabling fast note transfers between devices.',
   date: 'November 12, 2025',
-  status: 'in-progress' as const,
-  progress: 65,
+  status: 'completed' as const,
+  progress: 100,
   tags: ['NFC', 'HEC'],
   team: ['Ansh Tiwari'],
   subMilestones: [
@@ -602,8 +602,8 @@ const milestones = [
   title: 'Games Page UI Enhancements & Quiz Timer',
   description: 'Improved the visual and functional design of the Games Page and added a 30-second timer to the quiz game flow.',
   date: 'November 21, 2025',
-  status: 'in-progress' as const,
-  progress: 70,
+  status: 'completed' as const,
+  progress: 100,
   team: ['Kabir Singh Sidhu'],
   subMilestones: [
     { 
