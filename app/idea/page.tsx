@@ -1,5 +1,5 @@
-import { 
-  Lightbulb,  AlertCircle,  FileText,  BookOpen,  Frown,  BarChart3,  Users,  Sparkles,  Bot,  Gamepad2,  UsersRound,  TrendingUp, Upload, Zap, Trophy, Target, Brain,Handshake,Smartphone,ArrowRight
+import {
+  Lightbulb, AlertCircle, FileText, BookOpen, Frown, BarChart3, Users, Sparkles, Bot, Gamepad2, UsersRound, TrendingUp, Upload, Zap, Trophy, Target, Brain, Handshake, Smartphone, ArrowRight
 } from 'lucide-react';
 import '../../styles/Idea.css';
 
@@ -9,7 +9,7 @@ export default function IdeaPage() {
       {/* Hero Section */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-[#652497]/5 via-[#7c3aed]/5 to-transparent dark:from-[#652497]/10 dark:via-[#7c3aed]/10" />
-        
+
         <div className="relative max-w-7xl mx-auto px-6 py-20 sm:py-28">
           <div className="text-center space-y-6">
             <div className="inline-block hero-badge-animate">
@@ -18,13 +18,13 @@ export default function IdeaPage() {
                 The Big Idea
               </span>
             </div>
-            
+
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight hero-title-animate">
               <span className="bg-gradient-to-r from-[#652497] via-[#7c3aed] to-[#8b5cf6] bg-clip-text text-transparent gradient-text-smooth">
                 StudySage
               </span>
             </h1>
-            
+
             <p className="text-xl sm:text-2xl text-gray-700 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed font-medium hero-description-animate">
               Transforming how students learn with AI-powered study tools and gamified social learning
             </p>
@@ -32,7 +32,66 @@ export default function IdeaPage() {
         </div>
       </section>
 
-      {/* The Problem Section */}
+      {/* Video Showcase Section */}
+      <section id="demos" className="max-w-7xl mx-auto px-6 py-16">
+        <div className="text-center mb-16 space-y-4">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-50 dark:bg-purple-900/20 border border-purple-200 dark:border-purple-800">
+            <TrendingUp className="w-5 h-5 text-purple-600 dark:text-purple-400" />
+            <span className="text-purple-700 dark:text-purple-300 font-semibold text-sm">See It In Action</span>
+          </div>
+
+          <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white">
+            Watch Our <span className="bg-gradient-to-r from-[#652497] to-[#8b5cf6] bg-clip-text text-transparent">Journey</span>
+          </h2>
+
+          <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+            From our initial pitch to the latest demos, see how StudySage is evolving.
+          </p>
+        </div>
+
+        <div className="grid lg:grid-cols-3 gap-8">
+          {[
+            {
+              title: "Project Pitch",
+              description: "The vision that started it all.",
+              videoId: "YhgJX4OzSHQ"
+            },
+            {
+              title: "Show and Tell 1",
+              description: "Our first major milestone demo.",
+              videoId: "mfks0fe1SjU"
+            },
+            {
+              title: "Show and Tell 2",
+              description: "Latest features and improvements.",
+              videoId: "PZS5ptc-UMU"
+            }
+          ].map((video, idx) => (
+            <div key={idx} className="group relative rounded-2xl overflow-hidden bg-white dark:bg-slate-800 shadow-xl border border-gray-200 dark:border-slate-700 hover:border-[#652497]/50 transition-all duration-300">
+              <div className="aspect-video w-full bg-gray-100 dark:bg-slate-900 relative">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src={`https://www.youtube.com/embed/${video.videoId}`}
+                  title={video.title}
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="absolute inset-0"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-[#652497] dark:group-hover:text-purple-400 transition-colors">
+                  {video.title}
+                </h3>
+                <p className="text-gray-600 dark:text-gray-400">
+                  {video.description}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
       <section className="max-w-7xl mx-auto px-6 py-16">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
@@ -40,13 +99,13 @@ export default function IdeaPage() {
               <AlertCircle className="w-5 h-5 text-red-600 dark:text-red-400" />
               <span className="text-red-700 dark:text-red-300 font-semibold text-sm">The Problem</span>
             </div>
-            
+
             <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white">
               Studying is <span className="text-red-600 dark:text-red-400">broken</span>
             </h2>
-            
+
             <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
-              Students spend countless hours organizing notes, creating study materials, and finding study partners — 
+              Students spend countless hours organizing notes, creating study materials, and finding study partners —
               often feeling overwhelmed and unprepared for exams.
             </p>
           </div>
@@ -59,7 +118,7 @@ export default function IdeaPage() {
               { Icon: BarChart3, text: "No easy way to test knowledge or track progress" },
               { Icon: Users, text: "Finding study partners with similar material is difficult" }
             ].map((problem, idx) => (
-              <div 
+              <div
                 key={idx}
                 className="problem-card group flex items-start gap-4 p-5 rounded-2xl bg-white dark:bg-slate-800/50 border border-gray-200 dark:border-slate-700 hover:border-[#652497]/30 dark:hover:border-[#652497]/50 card-smooth-hover shadow-smooth border-smooth gpu-accelerated"
               >
@@ -78,20 +137,20 @@ export default function IdeaPage() {
       {/* The Solution Section */}
       <section className="relative py-20 my-16">
         <div className="absolute inset-0 bg-gradient-to-br from-[#652497]/10 via-[#7c3aed]/5 to-transparent dark:from-[#652497]/20 dark:via-[#7c3aed]/10" />
-        
+
         <div className="relative max-w-7xl mx-auto px-6">
           <div className="text-center mb-16 space-y-4">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800">
               <Sparkles className="w-5 h-5 text-green-600 dark:text-green-400" />
               <span className="text-green-700 dark:text-green-300 font-semibold text-sm">The Solution</span>
             </div>
-            
+
             <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white">
               Meet your AI study companion
             </h2>
-            
+
             <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed">
-              <strong className="text-[#652497] dark:text-purple-400">StudySage</strong> transforms your lecture notes 
+              <strong className="text-[#652497] dark:text-purple-400">StudySage</strong> transforms your lecture notes
               and slides into an interactive learning experience powered by AI and gamification.
             </p>
           </div>
@@ -129,7 +188,7 @@ export default function IdeaPage() {
                 className="feature-card group relative p-6 rounded-2xl bg-white dark:bg-slate-800/50 border border-gray-200 dark:border-slate-700 hover:border-[#652497]/40 dark:hover:border-[#652497]/60 card-smooth-hover shadow-smooth border-smooth gpu-accelerated"
               >
                 <div className={`absolute inset-0 rounded-2xl bg-gradient-to-br ${feature.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-500`} />
-                
+
                 <div className="relative space-y-3">
                   <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-[#652497]/10 to-[#8b5cf6]/10 dark:from-[#652497]/20 dark:to-[#8b5cf6]/20 flex items-center justify-center icon-container">
                     <feature.Icon className="w-7 h-7 text-[#652497] dark:text-purple-400" />
@@ -187,23 +246,23 @@ export default function IdeaPage() {
               {idx < 2 && (
                 <div className="hidden lg:block absolute top-20 left-full w-full h-0.5 bg-gradient-to-r from-[#652497]/30 to-transparent" />
               )}
-              
+
               <div className="relative p-8 rounded-2xl bg-white dark:bg-slate-800/50 border border-gray-200 dark:border-slate-700 hover:border-[#652497]/40 dark:hover:border-[#652497]/60 card-smooth-hover shadow-smooth border-smooth gpu-accelerated group">
                 <div className="flex items-center gap-4 mb-6">
-                  <div 
+                  <div
                     className="flex items-center justify-center w-16 h-16 rounded-full text-white shadow-lg smooth-transition"
                     style={{ background: `linear-gradient(135deg, ${step.color}, ${step.color}dd)` }}
                   >
                     <step.Icon className="w-8 h-8" />
                   </div>
-                  <span 
+                  <span
                     className="text-6xl font-black opacity-10 group-hover:opacity-20 smooth-transition"
                     style={{ color: step.color }}
                   >
                     {step.step}
                   </span>
                 </div>
-                
+
                 <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">
                   {step.title}
                 </h3>
@@ -229,12 +288,12 @@ export default function IdeaPage() {
               backgroundSize: '40px 40px'
             }} />
           </div>
-          
+
           <div className="relative space-y-8">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center">
               Why StudySage?
             </h2>
-            
+
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
               {[
                 {
@@ -258,7 +317,7 @@ export default function IdeaPage() {
                   Icon: Smartphone
                 }
               ].map((value, idx) => (
-                <div 
+                <div
                   key={idx}
                   className="value-card p-6 rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20 smooth-hover gpu-accelerated"
                 >
@@ -283,7 +342,7 @@ export default function IdeaPage() {
           <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
             Join thousands of students who are already studying smarter, not harder
           </p>
-          
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
             <a
               href="/progress"

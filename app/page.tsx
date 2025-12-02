@@ -1,5 +1,6 @@
-import { 
-  Sparkles, Bot, Gamepad2,  Users,  TrendingUp,Upload, Zap, Trophy, Github,Download, ArrowRight,ExternalLink} from 'lucide-react';
+import {
+  Sparkles, Bot, Gamepad2, Users, TrendingUp, Upload, Zap, Trophy, Github, Download, ArrowRight, ExternalLink
+} from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import '../styles/Home.css';
@@ -7,19 +8,19 @@ import '../styles/Home.css';
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-purple-50/30 to-slate-100 dark:from-slate-950 dark:via-purple-950/20 dark:to-slate-900">
-      
+
       {/* Hero Section */}
       <section className="relative overflow-hidden">
         {/* Background Elements */}
         <div className="absolute inset-0 bg-gradient-to-br from-[#652497]/10 via-[#7c3aed]/5 to-transparent dark:from-[#652497]/20 dark:via-[#7c3aed]/10" />
-        
+
         {/* Animated Circles */}
         <div className="absolute top-20 left-10 w-72 h-72 bg-[#652497]/10 dark:bg-[#652497]/5 rounded-full blur-3xl animate-float" />
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-[#8b5cf6]/10 dark:bg-[#8b5cf6]/5 rounded-full blur-3xl animate-float" style={{ animationDelay: '1s' }} />
-        
+
         <div className="relative max-w-7xl mx-auto px-6 py-20 sm:py-32">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            
+
             {/* Left Content */}
             <div className="space-y-8 hero-content">
               <div className="inline-block hero-badge-animate">
@@ -28,13 +29,13 @@ export default function Home() {
                   AI-Powered Study Platform
                 </span>
               </div>
-              
+
               <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-tight hero-title-animate">
                 Study <span className="bg-gradient-to-r from-[#652497] via-[#7c3aed] to-[#8b5cf6] bg-clip-text text-transparent">Smarter</span>,
                 <br />
                 Not Harder
               </h1>
-              
+
               <p className="text-xl sm:text-2xl text-gray-700 dark:text-gray-300 leading-relaxed hero-description-animate">
                 Transform your notes into AI-generated flashcards, compete with friends in quiz battles, and make studying actually <span className="font-bold text-[#652497] dark:text-purple-400">fun</span>.
               </p>
@@ -48,12 +49,12 @@ export default function Home() {
                   Discover Our Vision
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 smooth-transition" />
                 </Link>
-                
+
                 <Link
-                  href="/progress"
+                  href="/idea#demos"
                   className="px-8 py-4 rounded-xl bg-white dark:bg-slate-800 text-[#652497] dark:text-purple-400 font-bold text-lg border-2 border-[#652497]/30 dark:border-[#652497]/50 hover:border-[#652497] dark:hover:border-[#652497] button-smooth flex items-center justify-center gap-2"
                 >
-                  View Progress
+                  Watch Videos
                 </Link>
               </div>
 
@@ -69,7 +70,7 @@ export default function Home() {
                   View on GitHub
                   <ExternalLink className="w-4 h-4 opacity-70 group-hover:opacity-100 smooth-transition" />
                 </a>
-                
+
                 <a
                   href="/assets/studysage.apk"
                   download="studysage.apk"
@@ -95,7 +96,7 @@ export default function Home() {
                 {/* Glow Effect */}
                 <div className="absolute inset-0 bg-gradient-to-tr from-[#652497]/20 via-transparent to-[#8b5cf6]/20" />
               </div>
-              
+
               {/* Floating Elements */}
               <div className="absolute -top-6 -right-6 bg-white dark:bg-slate-800 p-4 rounded-2xl shadow-xl border border-gray-200 dark:border-slate-700 animate-float">
                 <div className="flex items-center gap-3">
@@ -108,7 +109,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              
+
               <div className="absolute -bottom-6 -left-6 bg-white dark:bg-slate-800 p-4 rounded-2xl shadow-xl border border-gray-200 dark:border-slate-700 animate-float" style={{ animationDelay: '0.5s' }}>
                 <div className="flex items-center gap-3">
                   <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#7c3aed] to-[#8b5cf6] flex items-center justify-center">
@@ -227,23 +228,23 @@ export default function Home() {
               {idx < 2 && (
                 <div className="hidden lg:block absolute top-20 left-full w-full h-0.5 bg-gradient-to-r from-[#652497]/30 to-transparent -z-10" />
               )}
-              
+
               <div className="p-8 rounded-2xl bg-white dark:bg-slate-800/50 border border-gray-200 dark:border-slate-700 hover:border-[#652497]/40 dark:hover:border-[#652497]/60 card-smooth-hover shadow-smooth">
                 <div className="flex items-center gap-4 mb-6">
-                  <div 
+                  <div
                     className="w-16 h-16 rounded-full flex items-center justify-center text-white font-bold text-2xl shadow-lg icon-container"
                     style={{ background: `linear-gradient(135deg, ${step.color}, ${step.color}dd)` }}
                   >
                     <step.icon className="w-8 h-8" />
                   </div>
-                  <span 
+                  <span
                     className="text-6xl font-black opacity-10"
                     style={{ color: step.color }}
                   >
                     {step.step}
                   </span>
                 </div>
-                
+
                 <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">
                   {step.title}
                 </h3>
@@ -286,11 +287,11 @@ export default function Home() {
               <div className="inline-block px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm border border-white/30">
                 <span className="text-sm font-semibold">Built by Students, For Students</span>
               </div>
-              
+
               <h2 className="text-3xl sm:text-4xl font-bold">
                 Meet the Team Behind StudySage
               </h2>
-              
+
               <p className="text-lg text-white/90 leading-relaxed">
                 We're five passionate university students who turned our frustration with traditional studying into a revolutionary learning platform. Each bringing unique expertise in AI, design, and development.
               </p>
@@ -316,7 +317,7 @@ export default function Home() {
               Study Game?
             </span>
           </h2>
-          
+
           <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
             Follow our development journey and be the first to try StudySage when we launch
           </p>
