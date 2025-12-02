@@ -74,7 +74,6 @@ const teamMembers = [
       'Fixed bugs across app components',
       'Added PDF support for games and fixed bugs across games UI screens'
     ],
-    skills: ['Figma', 'Adobe XD', 'User Research', 'Prototyping', 'Design Systems', 'Illustration'],
     social: {
       github: 'https://github.com/kab1rs1dhu',
       linkedin: '',
