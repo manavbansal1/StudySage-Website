@@ -32,66 +32,7 @@ export default function IdeaPage() {
         </div>
       </section>
 
-      {/* Video Showcase Section */}
-      <section id="demos" className="max-w-7xl mx-auto px-6 py-16">
-        <div className="text-center mb-16 space-y-4">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-50 dark:bg-purple-900/20 border border-purple-200 dark:border-purple-800">
-            <TrendingUp className="w-5 h-5 text-purple-600 dark:text-purple-400" />
-            <span className="text-purple-700 dark:text-purple-300 font-semibold text-sm">See It In Action</span>
-          </div>
 
-          <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white">
-            Watch Our <span className="bg-gradient-to-r from-[#652497] to-[#8b5cf6] bg-clip-text text-transparent">Journey</span>
-          </h2>
-
-          <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            From our initial pitch to the latest demos, see how StudySage is evolving.
-          </p>
-        </div>
-
-        <div className="grid lg:grid-cols-3 gap-8">
-          {[
-            {
-              title: "Project Pitch",
-              description: "The vision that started it all.",
-              videoId: "YhgJX4OzSHQ"
-            },
-            {
-              title: "Show and Tell 1",
-              description: "Our first major milestone demo.",
-              videoId: "mfks0fe1SjU"
-            },
-            {
-              title: "Show and Tell 2",
-              description: "Latest features and improvements.",
-              videoId: "PZS5ptc-UMU"
-            }
-          ].map((video, idx) => (
-            <div key={idx} className="group relative rounded-2xl overflow-hidden bg-white dark:bg-slate-800 shadow-xl border border-gray-200 dark:border-slate-700 hover:border-[#652497]/50 transition-all duration-300">
-              <div className="aspect-video w-full bg-gray-100 dark:bg-slate-900 relative">
-                <iframe
-                  width="100%"
-                  height="100%"
-                  src={`https://www.youtube.com/embed/${video.videoId}`}
-                  title={video.title}
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                  className="absolute inset-0"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-[#652497] dark:group-hover:text-purple-400 transition-colors">
-                  {video.title}
-                </h3>
-                <p className="text-gray-600 dark:text-gray-400">
-                  {video.description}
-                </p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
       <section className="max-w-7xl mx-auto px-6 py-16">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
@@ -329,6 +270,87 @@ export default function IdeaPage() {
                 </div>
               ))}
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Video Showcase Section */}
+      <section id="demos" className="max-w-7xl mx-auto px-6 py-16">
+        <div className="text-center mb-16 space-y-4">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-50 dark:bg-purple-900/20 border border-purple-200 dark:border-purple-800">
+            <TrendingUp className="w-5 h-5 text-purple-600 dark:text-purple-400" />
+            <span className="text-purple-700 dark:text-purple-300 font-semibold text-sm">See It In Action</span>
+          </div>
+
+          <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white">
+            Watch Our <span className="bg-gradient-to-r from-[#652497] to-[#8b5cf6] bg-clip-text text-transparent">Journey</span>
+          </h2>
+
+          <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+            From our initial pitch to the latest demos, see how StudySage is evolving.
+          </p>
+        </div>
+
+        <div className="grid lg:grid-cols-3 gap-8">
+          {[
+            {
+              title: "Project Pitch",
+              description: "The vision that started it all.",
+              videoId: "YhgJX4OzSHQ"
+            },
+            {
+              title: "Show and Tell 1",
+              description: "Our first major milestone demo.",
+              videoId: "mfks0fe1SjU"
+            },
+            {
+              title: "Show and Tell 2",
+              description: "Latest features and improvements.",
+              videoId: "PZS5ptc-UMU"
+            }
+          ].map((video, idx) => (
+            <div key={idx} className="group relative rounded-2xl overflow-hidden bg-white dark:bg-slate-800 shadow-xl border border-gray-200 dark:border-slate-700 hover:border-[#652497]/50 transition-all duration-300">
+              <div className="aspect-video w-full bg-gray-100 dark:bg-slate-900 relative">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src={`https://www.youtube.com/embed/${video.videoId}`}
+                  title={video.title}
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="absolute inset-0"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-[#652497] dark:group-hover:text-purple-400 transition-colors">
+                  {video.title}
+                </h3>
+                <p className="text-gray-600 dark:text-gray-400">
+                  {video.description}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Thread Diagram Section */}
+        <div className="mt-16 text-center space-y-8">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800">
+            <Zap className="w-5 h-5 text-blue-600 dark:text-blue-400" />
+            <span className="text-blue-700 dark:text-blue-300 font-semibold text-sm">Architecture</span>
+          </div>
+
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white">
+            Thread <span className="bg-gradient-to-r from-[#652497] to-[#8b5cf6] bg-clip-text text-transparent">Diagram</span>
+          </h2>
+
+          <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-200 dark:border-slate-700">
+            <img
+              src="/Frame.svg"
+              alt="Thread Diagram"
+              className="w-full h-auto"
+            />
           </div>
         </div>
       </section>
