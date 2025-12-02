@@ -16,36 +16,36 @@ const milestones = [
       { label: 'GitHub Repository', url: 'https://github.com/manavbansal1/studysage' }
     ],
     subMilestones: [
-      { 
-        id: '1-1', 
-        title: 'This commit marks the start of the project setup.', 
+      {
+        id: '1-1',
+        title: 'This commit marks the start of the project setup.',
         completed: true,
         assignee: 'Manav Bansal',
         notes: [
-          'Initialized Git repository'      
+          'Initialized Git repository'
         ]
       },
-      { 
-        id: '1-2', 
-        title: 'Confirmed that the environment builds without dependency errors.', 
-        completed: true, 
+      {
+        id: '1-2',
+        title: 'Confirmed that the environment builds without dependency errors.',
+        completed: true,
         assignee: 'Manav Bansal',
         notes: [
           'Set up Kotlin environment',
         ]
       },
-      { 
-        id: '1-3', 
-        title: 'Established naming conventions and directory structure for future development.', 
-        completed: true, 
+      {
+        id: '1-3',
+        title: 'Established naming conventions and directory structure for future development.',
+        completed: true,
         assignee: 'Manav Bansal',
         notes: [
           'Created folders for components, screens, services, and assets'
         ]
       },
-      { 
-        id: '1-4', 
-        title: 'Build the basic home screen and navigation structure.', 
+      {
+        id: '1-4',
+        title: 'Build the basic home screen and navigation structure.',
         completed: true,
         assignee: 'Manav Bansal',
         notes: [
@@ -60,39 +60,39 @@ const milestones = [
     title: 'Built the official StudySage website to showcase the app\'s concept, progress, and team contributions.',
     description: 'The site was built using Next.js and Tailwind CSS, featuring sections for the Home Page, Idea Overview, Progress Timeline, and Team Profiles.',
     date: 'Oct 17, 2025',
-    status: 'in-progress' as const,
-    progress: 85,
+    status: 'completed' as const,
+    progress: 100,
     tags: ['Next.js', 'Tailwind CSS', 'React', 'Vercel'],
     team: ['Manav Bansal', 'Yadhu Choudhary'],
     links: [
       { label: 'GitHub Repository', url: 'https://github.com/manavbansal1/studysage-website' }
     ],
     subMilestones: [
-      { 
-        id: '2-1', 
-        title: 'Initialized web repository', 
+      {
+        id: '2-1',
+        title: 'Initialized web repository',
         completed: true,
         assignee: 'Manav Bansal',
         date: 'Oct 22, 2025'
       },
-      { 
-        id: '2-2', 
-        title: 'Developed main pages: Home, Idea, Progress, and Team and Deployed the website on Vercel for public access', 
-        completed: true, 
+      {
+        id: '2-2',
+        title: 'Developed main pages: Home, Idea, Progress, and Team and Deployed the website on Vercel for public access',
+        completed: true,
         assignee: 'Manav Bansal',
         date: 'Oct 24, 2025'
       },
-      { 
-        id: '2-3', 
-        title: 'Removed the placeholders and added real content, images, and team member profiles', 
-        completed: true, 
+      {
+        id: '2-3',
+        title: 'Removed the placeholders and added real content, images, and team member profiles',
+        completed: true,
         assignee: 'Yadhu Choudhary',
         date: 'Oct 25, 2025'
       },
-      { 
-        id: '2-4', 
-        title: 'Fixed some errors, improved responsiveness, and polished the UI/UX design', 
-        completed: true, 
+      {
+        id: '2-4',
+        title: 'Fixed some errors, improved responsiveness, and polished the UI/UX design',
+        completed: true,
         assignee: 'Yadhu Choudhary',
         date: 'Nov 1, 2025'
       },
@@ -113,28 +113,28 @@ const milestones = [
       '/screenshots/C2.png'
     ],
     subMilestones: [
-      { 
-        id: '3-1', 
-        title: 'Initialized Android project with Jetpack Compose', 
-        completed: true, 
+      {
+        id: '3-1',
+        title: 'Initialized Android project with Jetpack Compose',
+        completed: true,
         assignee: 'Kabir Singh Sidhu',
         notes: [
           'This commit established the UI skeleton and ensured Compose and navigation were correctly integrated.'
         ]
       },
-      { 
-        id: '3-2', 
-        title: 'Designed a composable HomeScreen() showing key options: Upload Notes, Quiz, and Games.', 
-        completed: true, 
+      {
+        id: '3-2',
+        title: 'Designed a composable HomeScreen() showing key options: Upload Notes, Quiz, and Games.',
+        completed: true,
         assignee: 'Kabir Singh Sidhu',
         notes: [
           'Created buttons for Upload Notes, Quiz, and Games',
         ]
       },
-      { 
-        id: '3-3', 
-        title: 'Integrate user authentication with sign-in and sign-out functionality', 
-        completed: true, 
+      {
+        id: '3-3',
+        title: 'Integrate user authentication with sign-in and sign-out functionality',
+        completed: true,
         assignee: 'Kabir Singh Sidhu',
         notes: [
           'Set up Firebase Auth for user management',
@@ -154,19 +154,19 @@ const milestones = [
     tags: ['Gemini API (planned)'],
     team: ['Manav Bansal', 'Kabir Singh Sidhu'],
     subMilestones: [
-      { 
-        id: '4-1', 
-        title: 'Designed app icon', 
-        completed: true, 
+      {
+        id: '4-1',
+        title: 'Designed app icon',
+        completed: true,
         assignee: 'Manav Bansal',
         notes: [
           'Replaced default launcher icon with the new StudySage app icon.'
         ]
       },
-      { 
-        id: '4-2', 
-        title: 'Created base structure & placeholder functions for the AI notes summarization module.', 
-        completed: true, 
+      {
+        id: '4-2',
+        title: 'Created base structure & placeholder functions for the AI notes summarization module.',
+        completed: true,
         assignee: 'Kabir Singh Sidhu',
         notes: [
           'AI summarization logic not fully implemented yet',
@@ -189,28 +189,28 @@ const milestones = [
       '/screenshots/C4.png'
     ],
     subMilestones: [
-      { 
-        id: '5-1', 
-        title: 'Created a visually rich and responsive Profile Screen using Jetpack Compose.', 
-        completed: true, 
+      {
+        id: '5-1',
+        title: 'Created a visually rich and responsive Profile Screen using Jetpack Compose.',
+        completed: true,
         assignee: 'Ansh Tiwari',
         notes: [
           'Profile data successfully fetched and rendered dynamically.'
         ]
       },
-      { 
-        id: '5-2', 
-        title: 'Displayed user data such as Name, Email, About Section, Level, XP, and Streak.', 
-        completed: true, 
+      {
+        id: '5-2',
+        title: 'Displayed user data such as Name, Email, About Section, Level, XP, and Streak.',
+        completed: true,
         assignee: 'Ansh Tiwari',
         notes: [
           'Designed consistent purple gradient theme matching overall StudySage UI.'
         ]
       },
-      { 
-        id: '5-3', 
-        title: 'Integrated Cloudinary API to support image uploads for user avatars.', 
-        completed: true, 
+      {
+        id: '5-3',
+        title: 'Integrated Cloudinary API to support image uploads for user avatars.',
+        completed: true,
         assignee: 'Ansh Tiwari',
         notes: [
           'Cloudinary integration enables real-time profile image updates.'
@@ -233,9 +233,9 @@ const milestones = [
     ],
     subMilestones: [
       { id: '6-1', title: 'Built Notes Screen UI with data binding to NotesViewModel.', completed: true, assignee: 'Kabir Singh Sidhu' },
-      { id: '6-2', title: 'Integrated summarization logic for text files using Gemini API setup.', completed: true, assignee: 'Kabir Singh Sidhu'},
+      { id: '6-2', title: 'Integrated summarization logic for text files using Gemini API setup.', completed: true, assignee: 'Kabir Singh Sidhu' },
       { id: '6-3', title: 'Connected database to fetch stored notes and summaries.', completed: true, assignee: 'Kabir Singh Sidhu' },
-      { id: '6-4', title: 'Identified and started debugging PDF parsing issue.', completed: true, assignee: 'Kabir Singh Sidhu'}
+      { id: '6-4', title: 'Identified and started debugging PDF parsing issue.', completed: true, assignee: 'Kabir Singh Sidhu' }
     ],
     notes: 'Currently functional for .txt uploads; PDF extraction under development to support wider note formats.'
   },
@@ -244,8 +244,8 @@ const milestones = [
     title: 'Fixed PDF Parsing & Expanded File Support',
     description: 'Resolved the PDF parsing error, ensuring accurate extraction of text, tags, and summaries. Enhanced the Notes Screen to display note format indicators (PDF, TXT, DOC, DOCX).',
     date: 'October 23, 2025',
-    status: 'in-progress' as const,
-    progress: 75,
+    status: 'completed' as const,
+    progress: 100,
     tags: ['PDF Parsing (completed)', 'File I/O'],
     team: ['Kabir Singh Sidhu'],
     images: [
@@ -255,7 +255,7 @@ const milestones = [
     subMilestones: [
       { id: '7-1', title: 'Fixed parsing logic for PDFs using improved text extraction pipeline.', completed: true, assignee: 'Manav Bansal' },
       { id: '7-2', title: 'Added compatibility for DOC, DOCX file uploads and summaries.', completed: true, assignee: 'Akaaljot Singh Mathoda' },
-      { id: '7-3', title: 'Updated Notes UI to visually show file type labels for each entry.', completed: true,assignee: 'Ansh Tiwari' }
+      { id: '7-3', title: 'Updated Notes UI to visually show file type labels for each entry.', completed: true, assignee: 'Ansh Tiwari' }
     ],
     notes: 'PDF, TXT and DOC summarization now fully functional; validated with diverse document samples for reliability and tag accuracy.'
   },
@@ -275,7 +275,7 @@ const milestones = [
     subMilestones: [
       { id: '8-1', title: 'Implemented menu options: View Members, Add Member, and Delete Group.', completed: true, assignee: 'Ansh Tiwari' },
       { id: '8-2', title: 'Created dynamic group info header showing group name and member count.', completed: true, assignee: 'Ansh Tiwari' },
-      { id: '8-3', title: 'Prepared structure for future real-time chat updates and Firebase integration.', completed: true,assignee: 'Ansh Tiwari' }
+      { id: '8-3', title: 'Prepared structure for future real-time chat updates and Firebase integration.', completed: true, assignee: 'Ansh Tiwari' }
     ],
     notes: 'Chat interface and group management options are functional; next step is enabling real-time message exchange using Firebase Realtime Database.'
   },
@@ -293,7 +293,7 @@ const milestones = [
     subMilestones: [
       { id: '9-1', title: 'Built Courses Screen UI with course cards showing course code, instructor, and credits.', completed: true, assignee: 'Kabir Singh Sidhu' },
       { id: '9-2', title: 'Implemented Add Course Dialog to input course name, code, instructor, and credit hours.', completed: true, assignee: 'Kabir Singh Sidhu' },
-      { id: '9-3', title: 'Added Semester and Year dropdown filters for easy course organization.', completed: true,assignee: 'Kabir Singh Sidhu' }
+      { id: '9-3', title: 'Added Semester and Year dropdown filters for easy course organization.', completed: true, assignee: 'Kabir Singh Sidhu' }
     ],
     notes: 'Course filtering works seamlessly across multiple semesters and years.'
   },
@@ -313,9 +313,9 @@ const milestones = [
     subMilestones: [
       { id: '10-1', title: 'Applied a unified dark gradient theme throughout the app for consistency.', completed: true, assignee: 'Akaaljot Singh Mathoda' },
       { id: '10-2', title: 'Added Quick Actions on the Home Page: Flashcards, Take Quiz, Study Groups, and Games.', completed: true, assignee: 'Akaaljot Singh Mathoda' },
-      { id: '10-3', title: 'Updated Profile Page with editable sections, profile customization options, and improved stats display.', completed: true,assignee: 'Akaaljot Singh Mathoda' },
-      { id: '10-4', title: 'Enhanced Groups Page UI with real-time status indicators and streamlined navigation for creating and managing groups.', completed: true,assignee: 'Akaaljot Singh Mathoda' },
-      { id: '10-5', title: 'Optimized component spacing, iconography, and color contrast for better readability.', completed: true,assignee: 'Akaaljot Singh Mathoda' }
+      { id: '10-3', title: 'Updated Profile Page with editable sections, profile customization options, and improved stats display.', completed: true, assignee: 'Akaaljot Singh Mathoda' },
+      { id: '10-4', title: 'Enhanced Groups Page UI with real-time status indicators and streamlined navigation for creating and managing groups.', completed: true, assignee: 'Akaaljot Singh Mathoda' },
+      { id: '10-5', title: 'Optimized component spacing, iconography, and color contrast for better readability.', completed: true, assignee: 'Akaaljot Singh Mathoda' }
     ],
     notes: 'New theme improves overall UI harmony and accessibility. Quick Actions increase usability by giving instant access to core app features.'
   },
@@ -332,9 +332,9 @@ const milestones = [
       '/screenshots/C11_1.png'
     ],
     subMilestones: [
-      { id: '11-1', title: 'Added full light and dark mode support for the Home screen and its components', completed: true, assignee: 'Manav Bansal',},
+      { id: '11-1', title: 'Added full light and dark mode support for the Home screen and its components', completed: true, assignee: 'Manav Bansal', },
       { id: '11-2', title: 'Implemented glass-like navbar for smoother transitions.', completed: true, assignee: 'Manav Bansal' },
-      { id: '11-3', title: 'Added success overlay for course addition confirmation.', completed: true,assignee: 'Manav Bansal' }
+      { id: '11-3', title: 'Added success overlay for course addition confirmation.', completed: true, assignee: 'Manav Bansal' }
     ],
     notes: 'UI is now fully adaptive across themes and orientations. The glass-effect navbar provides a premium look, improving overall user interaction fluidity.'
   },
@@ -351,29 +351,29 @@ const milestones = [
       '/screenshots/C12_1.png'
     ],
     subMilestones: [
-      { 
-        id: '12-1', 
-        title: 'Added an empty Games Screen linked to the bottom navigation bar.', 
-        completed: true, 
+      {
+        id: '12-1',
+        title: 'Added an empty Games Screen linked to the bottom navigation bar.',
+        completed: true,
         assignee: 'Ansh Tiwari',
         notes: [
           'Implemented bottom navigation with Home, Courses, Groups, and Games tabs',
           'Purple gradient theme applied consistently across navigation elements'
         ]
       },
-      { 
-        id: '12-2', 
-        title: 'Implemented Change Password option under the Settings section.', 
-        completed: true, 
+      {
+        id: '12-2',
+        title: 'Implemented Change Password option under the Settings section.',
+        completed: true,
         assignee: 'Akaaljot Singh Mathoda',
         notes: [
           'Added profile customization with avatar display',
           'Integrated Settings section with Change Password and Privacy options'
         ]
       },
-      { 
-        id: '12-3', 
-        title: 'Minor UI polishing and alignment fixes for consistency across pages.', 
+      {
+        id: '12-3',
+        title: 'Minor UI polishing and alignment fixes for consistency across pages.',
         completed: true,
         assignee: 'Akaaljot Singh Mathoda',
         notes: [
@@ -393,21 +393,21 @@ const milestones = [
     progress: 100,
     team: ['Kabir Singh Sidhu', 'Ansh Tiwari'],
     subMilestones: [
-      { 
-        id: '13-1', 
-        title: 'Added a Download PDF button within the Notes section for easy access to saved summaries.', 
-        completed: true, 
+      {
+        id: '13-1',
+        title: 'Added a Download PDF button within the Notes section for easy access to saved summaries.',
+        completed: true,
         assignee: 'Kabir Singh Sidhu',
       },
-      { 
-        id: '13-2', 
-        title: 'Improved bottom navigation transitions and fixed minor animation delays.', 
-        completed: true, 
+      {
+        id: '13-2',
+        title: 'Improved bottom navigation transitions and fixed minor animation delays.',
+        completed: true,
         assignee: 'Ansh Tiwari',
       },
-      { 
-        id: '13-3', 
-        title: 'Updated Group Chat colors, gradients, and icons to match the app’s theme.', 
+      {
+        id: '13-3',
+        title: 'Updated Group Chat colors, gradients, and icons to match the app’s theme.',
         completed: true,
         assignee: 'Ansh Tiwari',
       }
@@ -423,16 +423,16 @@ const milestones = [
     progress: 100,
     team: ['Ansh Tiwari'],
     subMilestones: [
-      { 
-        id: '14-1', 
-        title: 'Implemented Host & Join Game overlay components', 
-        completed: true, 
+      {
+        id: '14-1',
+        title: 'Implemented Host & Join Game overlay components',
+        completed: true,
         assignee: 'Ansh Tiwari',
       },
-      { 
-        id: '14-2', 
-        title: 'Added real-time listener for group invites in Groups Page', 
-        completed: true, 
+      {
+        id: '14-2',
+        title: 'Added real-time listener for group invites in Groups Page',
+        completed: true,
         assignee: 'Ansh Tiwari',
       }
     ],
@@ -447,16 +447,16 @@ const milestones = [
     progress: 100,
     team: ['Yadhu Choudhary'],
     subMilestones: [
-      { 
-        id: '15-1', 
-        title: 'Integrated Media Permissions (Photos, Videos, Files)', 
-        completed: true, 
+      {
+        id: '15-1',
+        title: 'Integrated Media Permissions (Photos, Videos, Files)',
+        completed: true,
         assignee: 'Yadhu Choudhary',
       },
-      { 
-        id: '15-2', 
-        title: 'Added Audio Recording & Playback Permissions', 
-        completed: true, 
+      {
+        id: '15-2',
+        title: 'Added Audio Recording & Playback Permissions',
+        completed: true,
         assignee: 'Yadhu Choudhary',
       }
     ],
@@ -467,234 +467,358 @@ const milestones = [
     title: 'Added Basic Quiz Structure & Game Generation Files',
     description: 'Set up the foundational architecture for quiz generation and gameplay, preparing the app for upcoming interactive learning experiences.',
     date: 'November 10, 2025',
-    status: 'in-progress' as const,
-    progress: 10,
+    status: 'completed' as const,
+    progress: 100,
     team: ['Kabir Singh Sidhu'],
     subMilestones: [
-      { 
-        id: '16-1', 
-        title: 'Created base quiz data models and structure', 
-        completed: true, 
+      {
+        id: '16-1',
+        title: 'Created base quiz data models and structure',
+        completed: true,
         assignee: 'Kabir Singh Sidhu',
       },
-      { 
-        id: '16-2', 
-        title: 'Added all essential files required for AI-powered game generation', 
-        completed: true, 
+      {
+        id: '16-2',
+        title: 'Added all essential files required for AI-powered game generation',
+        completed: true,
         assignee: 'Kabir Singh Sidhu',
       }
     ],
     notes: 'This enables future development of dynamic quiz games that leverage AI to create personalized learning experiences based on user notes.'
   },
-{
-  id: '17',
-  title: 'Flashcards Placeholder & AI Flashcard Generation Integrated',
-  description: 'Introduced a temporary Flashcards UI placeholder and integrated the feature with Gemini to auto-generate flashcard data from notes.',
-  date: 'November 11, 2025',
-  status: 'completed' as const,
-  progress: 100,
-  tags: ['Gemini API'],
-  team: ['Yadhu Choudhary'],
-  subMilestones: [
-    { 
-      id: '17-1', 
-      title: 'Added Flashcards placeholder UI to the app', 
-      completed: true, 
-      assignee: 'Yadhu Choudhary',
-    },
-    { 
-      id: '17-2', 
-      title: 'Implemented flashcard generation via Gemini using uploaded notes', 
-      completed: true, 
-      assignee: 'Yadhu Choudhary',
-    }
-  ],
-  notes: 'When a note is processed, its content is sent to Gemini which returns structured flashcard data. These flashcards are then displayed through an interactive UI in the app.'
-},
-{
-  id: '18',
-  title: 'Added NFC Note Sharing Page & Navigation',
-  description: 'Implemented NFC-based note sharing using hosted NFC for the sender and system NFC for the receiver, enabling fast note transfers between devices.',
-  date: 'November 12, 2025',
-  status: 'completed' as const,
-  progress: 100,
-  tags: ['NFC', 'HEC'],
-  team: ['Ansh Tiwari'],
-  subMilestones: [
-    { 
-      id: '18-1', 
-      title: 'Created NFC page with sending & receiving placeholders', 
-      completed: true, 
-      assignee: 'Ansh Tiwari',
-    },
-    { 
-      id: '18-2', 
-      title: 'Implemented navigation flow for NFC-based note sharing', 
-      completed: true, 
-      assignee: 'Ansh Tiwari',
-    },
-    { 
-      id: '18-3', 
-      title: 'Integrated HEC-based NFC hosting and standard NFC receiving', 
-      completed: true, 
-      assignee: 'Ansh Tiwari',
-    }
-  ],
-  notes: 'The feature sets the groundwork for seamless device-to-device sharing, allowing users to instantly exchange notes through NFC technology.'
-},
-{
-  id: '19',
-  title: 'Multiplayer Game System with WebSocket Support',
-  description: 'Introduced real-time multiplayer capabilities and built the standalone quiz game using WebSockets.',
-  date: 'November 14, 2025',
-  status: 'in-progress' as const,
-  progress: 70,
-  tags: ['WebSocket', 'Multiplayer Gaming'],
-  team: ['Manav Bansal'],
-  subMilestones: [
-    { 
-      id: '19-1', 
-      title: 'Implemented WebSocket architecture for multiplayer gameplay', 
-      completed: true, 
-      assignee: 'Manav Bansal',
-    },
-    { 
-      id: '19-2', 
-      title: 'Added standalone quiz game mode using real-time game events', 
-      completed: true,
-      assignee: 'Manav Bansal',
-    }
-  ],
-  notes: 'This system allows multiple users to join quiz games simultaneously, enhancing the interactive learning experience through competitive gameplay.'
-},
-{
-  id: '20',
-  title: 'Profile Screen Improvements & Day Streak Feature',
-  description: 'Enhanced the profile experience with visual improvements, added day streak tracking, and improved navigation from recent PDFs.',
-  date: 'November 16, 2025',
-  status: 'completed' as const,
-  progress: 100,
-  team: ['Akaaljot Singh Mathoda'],
-  subMilestones: [
-    { 
-      id: '20-1', 
-      title: 'Implemented day streak system in profile', 
-      completed: true, 
-      assignee: 'Akaaljot Singh Mathoda',
-    },
-    { 
-      id: '20-2', 
-      title: 'Enabled navigation to relevant course from recently opened PDFs', 
-      completed: true, 
-      assignee: 'Akaaljot Singh Mathoda',
-    },
-    { 
-      id: '20-3', 
-      title: 'Made general UI enhancements for consistency', 
-      completed: true,
-      assignee: 'Akaaljot Singh Mathoda',
-    }
-  ],
-  notes: 'The profile section now feels more dynamic and informative, helping users track streaks and jump back into their study materials quickly.'
-},
-{
-  id: '21',
-  title: 'Games Page UI Enhancements & Quiz Timer',
-  description: 'Improved the visual and functional design of the Games Page and added a 30-second timer to the quiz game flow.',
-  date: 'November 21, 2025',
-  status: 'completed' as const,
-  progress: 100,
-  team: ['Kabir Singh Sidhu'],
-  subMilestones: [
-    { 
-      id: '21-1', 
-      title: 'Enhanced the Games Page UI with interactive elements', 
-      completed: true, 
-      assignee: 'Kabir Singh Sidhu',
-    },
-    { 
-      id: '21-2', 
-      title: 'Added 30-second countdown timer for quiz games', 
-      completed: true, 
-      assignee: 'Kabir Singh Sidhu',
-    }
-  ],
-  notes: 'These updates make the gameplay experience more structured and visually appealing, improving player engagement during quiz rounds.'
-},
-{
-  id: '22',
-  title: 'Recently Opened PDFs Screen & Quick Actions Enhancements',
-  description: 'Added a dedicated screen for recently opened PDFs, quick quizzes, and quick flashcards in the Home tab.',
-  date: 'November 21, 2025',
-  status: 'completed' as const,
-  progress: 100,
-  team: ['Akaaljot Singh Mathoda'],
-  subMilestones: [
-    { 
-      id: '22-1', 
-      title: 'Added Recently Opened PDFs screen', 
-      completed: true, 
-      assignee: 'Akaaljot Singh Mathoda',
-    },
-    { 
-      id: '22-2', 
-      title: 'Implemented Clear All option for Recently Opened PDFs', 
-      completed: true, 
-      assignee: 'Akaaljot Singh Mathoda',
-    },
-    { 
-      id: '22-3', 
-      title: 'Integrated Quick Quiz and Quick Flashcards in Home Quick Actions', 
-      completed: true,
-      assignee: 'Akaaljot Singh Mathoda',
-    }
-  ],
-  notes: 'These productivity additions make it easier for users to quickly revise materials and access their frequently opened PDFs.'
-},
-{
-  id: '23',
-  title: 'Study-Tac-Toe Game Added',
-  description: 'Developed and integrated a Study-Tac-Toe game — a competitive, learning-focused twist on the classic tic-tac-toe concept.',
-  date: 'November 22, 2025',
-  status: 'in-progress' as const,
-  progress: 75,
-  tags: ['WebSocket', 'Game Development'],
-  team: ['Manav Bansal'],
-  subMilestones: [
-    { 
-      id: '23-1', 
-      title: 'Implemented core Study-Tac-Toe gameplay mechanics', 
-      completed: true, 
-      assignee: 'Manav Bansal',
-    }
-  ],
-  notes: 'This new game mode introduces a fun and interactive approach to learning, merging strategy gameplay with study concepts.'
-},
-{
-  id: '24',
-  title: 'Podcasts Feature for Notes',
-  description: 'Enabled users to convert notes into podcasts using Gemini for script generation and Google Cloud TTS for audio playback.',
-  date: 'November 22, 2025',
-  status: 'in-progress' as const,
-  progress: 85,
-  tags: ['Gemini API', 'Google Cloud TTS'],
-  team: ['Yadhu Choudhary'],
-  subMilestones: [
-    { 
-      id: '24-1', 
-      title: 'Created pipeline from notes → Gemini → Google TTS', 
-      completed: true, 
-      assignee: 'Yadhu Choudhary',
-    },
-    { 
-      id: '24-2', 
-      title: 'Implemented podcast playback UI in-app', 
-      completed: true, 
-      assignee: 'Yadhu Choudhary',
-    }
-  ],
-  notes: 'Users can now listen to their uploaded documents like audio lessons, making studying more accessible and hands-free.'
-}
+  {
+    id: '17',
+    title: 'Flashcards Placeholder & AI Flashcard Generation Integrated',
+    description: 'Introduced a temporary Flashcards UI placeholder and integrated the feature with Gemini to auto-generate flashcard data from notes.',
+    date: 'November 11, 2025',
+    status: 'completed' as const,
+    progress: 100,
+    tags: ['Gemini API'],
+    team: ['Yadhu Choudhary'],
+    subMilestones: [
+      {
+        id: '17-1',
+        title: 'Added Flashcards placeholder UI to the app',
+        completed: true,
+        assignee: 'Yadhu Choudhary',
+      },
+      {
+        id: '17-2',
+        title: 'Implemented flashcard generation via Gemini using uploaded notes',
+        completed: true,
+        assignee: 'Yadhu Choudhary',
+      }
+    ],
+    notes: 'When a note is processed, its content is sent to Gemini which returns structured flashcard data. These flashcards are then displayed through an interactive UI in the app.'
+  },
+  {
+    id: '18',
+    title: 'Added NFC Note Sharing Page & Navigation',
+    description: 'Implemented NFC-based note sharing using hosted NFC for the sender and system NFC for the receiver, enabling fast note transfers between devices.',
+    date: 'November 12, 2025',
+    status: 'completed' as const,
+    progress: 100,
+    tags: ['NFC', 'HEC'],
+    team: ['Ansh Tiwari'],
+    subMilestones: [
+      {
+        id: '18-1',
+        title: 'Created NFC page with sending & receiving placeholders',
+        completed: true,
+        assignee: 'Ansh Tiwari',
+      },
+      {
+        id: '18-2',
+        title: 'Implemented navigation flow for NFC-based note sharing',
+        completed: true,
+        assignee: 'Ansh Tiwari',
+      },
+      {
+        id: '18-3',
+        title: 'Integrated HEC-based NFC hosting and standard NFC receiving',
+        completed: true,
+        assignee: 'Ansh Tiwari',
+      }
+    ],
+    notes: 'The feature sets the groundwork for seamless device-to-device sharing, allowing users to instantly exchange notes through NFC technology.'
+  },
+  {
+    id: '19',
+    title: 'Multiplayer Game System with WebSocket Support',
+    description: 'Introduced real-time multiplayer capabilities and built the standalone quiz game using WebSockets.',
+    date: 'November 14, 2025',
+    status: 'completed' as const,
+    progress: 100,
+    tags: ['WebSocket', 'Multiplayer Gaming'],
+    team: ['Manav Bansal'],
+    subMilestones: [
+      {
+        id: '19-1',
+        title: 'Implemented WebSocket architecture for multiplayer gameplay',
+        completed: true,
+        assignee: 'Manav Bansal',
+      },
+      {
+        id: '19-2',
+        title: 'Added standalone quiz game mode using real-time game events',
+        completed: true,
+        assignee: 'Manav Bansal',
+      }
+    ],
+    notes: 'This system allows multiple users to join quiz games simultaneously, enhancing the interactive learning experience through competitive gameplay.'
+  },
+  {
+    id: '20',
+    title: 'Profile Screen Improvements & Day Streak Feature',
+    description: 'Enhanced the profile experience with visual improvements, added day streak tracking, and improved navigation from recent PDFs.',
+    date: 'November 16, 2025',
+    status: 'completed' as const,
+    progress: 100,
+    team: ['Akaaljot Singh Mathoda'],
+    subMilestones: [
+      {
+        id: '20-1',
+        title: 'Implemented day streak system in profile',
+        completed: true,
+        assignee: 'Akaaljot Singh Mathoda',
+      },
+      {
+        id: '20-2',
+        title: 'Enabled navigation to relevant course from recently opened PDFs',
+        completed: true,
+        assignee: 'Akaaljot Singh Mathoda',
+      },
+      {
+        id: '20-3',
+        title: 'Made general UI enhancements for consistency',
+        completed: true,
+        assignee: 'Akaaljot Singh Mathoda',
+      }
+    ],
+    notes: 'The profile section now feels more dynamic and informative, helping users track streaks and jump back into their study materials quickly.'
+  },
+  {
+    id: '21',
+    title: 'Games Page UI Enhancements & Quiz Timer',
+    description: 'Improved the visual and functional design of the Games Page and added a 30-second timer to the quiz game flow.',
+    date: 'November 21, 2025',
+    status: 'completed' as const,
+    progress: 100,
+    team: ['Kabir Singh Sidhu'],
+    subMilestones: [
+      {
+        id: '21-1',
+        title: 'Enhanced the Games Page UI with interactive elements',
+        completed: true,
+        assignee: 'Kabir Singh Sidhu',
+      },
+      {
+        id: '21-2',
+        title: 'Added 30-second countdown timer for quiz games',
+        completed: true,
+        assignee: 'Kabir Singh Sidhu',
+      }
+    ],
+    notes: 'These updates make the gameplay experience more structured and visually appealing, improving player engagement during quiz rounds.'
+  },
+  {
+    id: '22',
+    title: 'Recently Opened PDFs Screen & Quick Actions Enhancements',
+    description: 'Added a dedicated screen for recently opened PDFs, quick quizzes, and quick flashcards in the Home tab.',
+    date: 'November 21, 2025',
+    status: 'completed' as const,
+    progress: 100,
+    team: ['Akaaljot Singh Mathoda'],
+    subMilestones: [
+      {
+        id: '22-1',
+        title: 'Added Recently Opened PDFs screen',
+        completed: true,
+        assignee: 'Akaaljot Singh Mathoda',
+      },
+      {
+        id: '22-2',
+        title: 'Implemented Clear All option for Recently Opened PDFs',
+        completed: true,
+        assignee: 'Akaaljot Singh Mathoda',
+      },
+      {
+        id: '22-3',
+        title: 'Integrated Quick Quiz and Quick Flashcards in Home Quick Actions',
+        completed: true,
+        assignee: 'Akaaljot Singh Mathoda',
+      }
+    ],
+    notes: 'These productivity additions make it easier for users to quickly revise materials and access their frequently opened PDFs.'
+  },
+  {
+    id: '23',
+    title: 'Study-Tac-Toe Game Added',
+    description: 'Developed and integrated a Study-Tac-Toe game — a competitive, learning-focused twist on the classic tic-tac-toe concept.',
+    date: 'November 22, 2025',
+    status: 'completed' as const,
+    progress: 100,
+    tags: ['WebSocket', 'Game Development'],
+    team: ['Manav Bansal'],
+    subMilestones: [
+      {
+        id: '23-1',
+        title: 'Implemented core Study-Tac-Toe gameplay mechanics',
+        completed: true,
+        assignee: 'Manav Bansal',
+      }
+    ],
+    notes: 'This new game mode introduces a fun and interactive approach to learning, merging strategy gameplay with study concepts.'
+  },
+  {
+    id: '24',
+    title: 'Podcasts Feature for Notes',
+    description: 'Enabled users to convert notes into podcasts using Gemini for script generation and Google Cloud TTS for audio playback.',
+    date: 'November 22, 2025',
+    status: 'completed' as const,
+    progress: 100,
+    tags: ['Gemini API', 'Google Cloud TTS'],
+    team: ['Yadhu Choudhary'],
+    subMilestones: [
+      {
+        id: '24-1',
+        title: 'Created pipeline from notes → Gemini → Google TTS',
+        completed: true,
+        assignee: 'Yadhu Choudhary',
+      },
+      {
+        id: '24-2',
+        title: 'Implemented podcast playback UI in-app',
+        completed: true,
+        assignee: 'Yadhu Choudhary',
+      }
+    ],
+    notes: 'Users can now listen to their uploaded documents like audio lessons, making studying more accessible and hands-free.'
+  },
+  {
+    id: '25',
+    title: 'Backend Optimization & Critical Bug Fixes',
+    description: 'Resolved critical backend issues and optimized system performance for better stability.',
+    date: 'November 26, 2025',
+    status: 'completed' as const,
+    progress: 100,
+    tags: ['Backend', 'Bug Fixes', 'Performance'],
+    team: ['Manav Bansal', 'Kabir Singh Sidhu'],
+    subMilestones: [
+      {
+        id: '25-1',
+        title: 'Fixed critical API latency issues.',
+        completed: true,
+        assignee: 'Manav Bansal',
+      },
+      {
+        id: '25-2',
+        title: 'Resolved database connection stability problems.',
+        completed: true,
+        assignee: 'Kabir Singh Sidhu',
+      },
+      {
+        id: '25-3',
+        title: 'Patched security vulnerabilities in backend endpoints.',
+        completed: true,
+        assignee: 'Manav Bansal',
+      }
+    ],
+    notes: 'Critical fixes ensured the games are stable for the final release.'
+  },
+  {
+    id: '26',
+    title: 'Screen Orientation & Data Persistence',
+    description: 'Implemented ViewModel architecture to ensure data persistence during screen orientation changes across all app components.',
+    date: 'November 28, 2025',
+    status: 'completed' as const,
+    progress: 100,
+    tags: ['ViewModel', 'Data Persistence', 'UI/UX'],
+    team: ['Akaaljot Singh Mathoda', 'Ansh Tiwari', 'Manav Bansal'],
+    subMilestones: [
+      {
+        id: '26-1',
+        title: 'Refactored Home and Profile screens to use ViewModels.',
+        completed: true,
+        assignee: 'Akaaljot Singh Mathoda',
+      },
+      {
+        id: '26-2',
+        title: 'Implemented state saving for Quiz and Games during rotation.',
+        completed: true,
+        assignee: 'Manav Bansal',
+      },
+      {
+        id: '26-3',
+        title: 'Ensured form data retention in Add Course and Group creation screens.',
+        completed: true,
+        assignee: 'Ansh Tiwari',
+      }
+    ],
+    notes: 'Seamless user experience maintained regardless of device orientation.'
+  },
+  {
+    id: '27',
+    title: 'Canvas LMS Integration',
+    description: 'Enabled users to connect their Canvas accounts and automatically import enrolled courses, streamlining the setup process.',
+    date: 'November 28, 2025',
+    status: 'completed' as const,
+    progress: 100,
+    tags: ['Canvas API', 'Integration', 'Education'],
+    team: ['Kabir Singh Sidhu'],
+    subMilestones: [
+      {
+        id: '27-1',
+        title: 'Implemented Canvas OAuth authentication.',
+        completed: true,
+        assignee: 'Kabir Singh Sidhu',
+      },
+      {
+        id: '27-2',
+        title: 'Created service to fetch and parse course data from Canvas.',
+        completed: true,
+        assignee: 'Kabir Singh Sidhu',
+      },
+      {
+        id: '27-3',
+        title: 'Added UI for Canvas authorization and course selection.',
+        completed: true,
+        assignee: 'Kabir Singh Sidhu',
+      }
+    ],
+    notes: 'Direct integration with Canvas allows for seamless course synchronization.'
+  },
+  {
+    id: '28',
+    title: 'Code Documentation & Cleanup',
+    description: 'Comprehensive documentation of the codebase including API endpoints, component structure, and setup guides.',
+    date: 'December 1, 2025',
+    status: 'completed' as const,
+    progress: 100,
+    tags: ['Documentation', 'Maintenance'],
+    team: ['Manav Bansal', 'Kabir Singh Sidhu', 'Ansh Tiwari', 'Akaaljot Singh Mathoda'],
+    subMilestones: [
+      {
+        id: '28-1',
+        title: 'Documented all API endpoints and backend logic.',
+        completed: true,
+        assignee: 'Ansh Tiwari',
+      },
+      {
+        id: '28-2',
+        title: 'Added detailed comments and KotlinDoc to frontend components.',
+        completed: true,
+        assignee: 'Kabir Singh Sidhu',
+      },
+      {
+        id: '28-3',
+        title: 'Updated README.md with comprehensive setup and contribution guidelines.',
+        completed: true,
+        assignee: 'Manav Bansal',
+      }
+    ],
+    notes: 'Ensured the codebase is maintainable and easy to understand for future developers.'
+  }
 ];
 
 export default function ProgressPage() {
@@ -707,7 +831,7 @@ export default function ProgressPage() {
       {/* Hero Section */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-[#652497]/5 via-[#7c3aed]/5 to-transparent dark:from-[#652497]/10 dark:via-[#7c3aed]/10" />
-        
+
         <div className="relative max-w-7xl mx-auto px-6 py-16 sm:py-20">
           <div className="text-center space-y-6">
             <div className="inline-block hero-badge-animate">
@@ -716,13 +840,13 @@ export default function ProgressPage() {
                 Development Journey
               </span>
             </div>
-            
+
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight hero-title-animate">
               <span className="bg-gradient-to-r from-[#652497] via-[#7c3aed] to-[#8b5cf6] bg-clip-text text-transparent">
                 Project Progress
               </span>
             </h1>
-            
+
             <p className="text-lg sm:text-xl text-gray-700 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed hero-description-animate">
               Track our development milestones, feature implementations, and the journey to building StudySage
             </p>
