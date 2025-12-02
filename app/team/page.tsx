@@ -7,14 +7,15 @@ const teamMembers = [
   {
     id: '1',
     name: 'Manav Bansal',
-    role: 'Full-Stack Web Developer',
-    description: 'Leading the StudySage project with a passion for educational technology. Specializes in system architecture and ensuring seamless integration between frontend and backend.',
+    role: 'Lead Backend Engineer & Game Developer',
+    description: 'Architected the real-time multiplayer game backend using WebSockets and built the course website. Ensures system reliability with robust API design.',
     image: '/team/manav.JPG',
     responsibilities: [
-      'Project repository creation, Kotlin environment setup, and initial codebase structure',
-      'Website development and deployment using Next.js, Tailwind CSS, and Vercel',
-      'App icon design and PDF parsing logic implementation',
-      'Theme support (light/dark mode) and UI/UX enhancements with glass-effect navbar'
+      'Added multiplayer games functionality with WebSocket support',
+      'Created the entire backend for the games feature',
+      'Implemented Quiz Race game and Study-Tac-Toe game',
+      'Created the course website',
+      'Fixed the API endpoints and added fallback mechanism screens in frontend to ensure reliability'
     ],
     social: {
       github: 'https://github.com/manavbansal1',
@@ -26,14 +27,14 @@ const teamMembers = [
   {
     id: '2',
     name: 'Akaaljot Singh Mathoda',
-    role: 'UI/UX Designer & Theme Developer',
-    description: 'Specializes in visual design, theming, and user interface enhancements across the application.',
+    role: 'Backend Security Engineer & UI Developer',
+    description: 'Focuses on secure backend infrastructure, API key management, and email service integration. Also contributes to maintaining a polished user interface.',
     image: '/team/akaal.jpeg',
     responsibilities: [
-      'DOC and DOCX file upload compatibility implementation',
-      'Dark purple theme design and application-wide implementation',
-      'Home Page Quick Actions and Profile Page customization features',
-      'Password management, Settings section, and UI consistency improvements'
+      'Integrated Resend email service with custom domain to send automated emails to users',
+      'Connected daily tasks, study streak features, and recently opened PDFs to backend',
+      'Developed a secure Google Cloud backend server that centralizes API key management and validates requests',
+      'Fixed UI bugs across the app'
     ],
     social: {
       github: 'https://github.com/jassa47',
@@ -44,14 +45,14 @@ const teamMembers = [
   {
     id: '3',
     name: 'Ansh Tiwari',
-    role: 'UI/UX Developer & AI/ML Engineer',
-    description: 'Focuses on user interface development, profile management, and social features.',
+    role: 'Mobile UI/UX Lead & Social Features Engineer',
+    description: 'Specializes in building interactive social features like real-time chat and NFC sharing. Dedicated to crafting intuitive user interfaces.',
     image: '/team/ansh.JPG',
     responsibilities: [
-      'Profile Page design with Cloudinary API integration for avatar uploads',
-      'Notes UI updates with file type indicators and visual enhancements',
-      'Group Chat functionality with member management features',
-      'Bottom navigation bar, Games Page placeholder, and navigation transitions'
+      'Implemented the basic UI for Groups tab and improved Group Chat UI',
+      'Implemented end-to-end NFC functionality for peer-to-peer document sharing and collaboration',
+      'Fully implemented real-time messages in Groups as well as Cloudinary file uploads',
+      'Improved the overall UI of the app and fixed UI bugs across app screens'
     ],
     social: {
       github: 'https://github.com/candyragi',
@@ -63,14 +64,15 @@ const teamMembers = [
   {
     id: '4',
     name: 'Kabir Singh Sidhu',
-    role: 'Lead Android Developer & AI Integration Specialist',
-    description: 'Core developer focusing on Android app development, UI implementation, and AI feature integration.',
+    role: 'AI Integration Lead & Android Developer',
+    description: 'Drives the AI capabilities of the app, focusing on intelligent quiz generation and document processing pipelines.',
     image: 'team/kabir.JPG',
     responsibilities: [
-      'Android project initialization with Jetpack Compose and navigation structure',
-      'Firebase Authentication integration for sign-in/sign-out functionality',
-      'Gemini API integration for AI-powered notes summarization (TXT, PDF formats)',
-      'Courses Page development with add/filter features and PDF download implementation'
+      'Implemented AI-powered quiz generation from PDFs',
+      'Implemented PDF upload feature and processing pipeline',
+      'Collaborated in game development',
+      'Fixed bugs across app components',
+      'Added PDF support for games and fixed bugs across games UI screens'
     ],
     skills: ['Figma', 'Adobe XD', 'User Research', 'Prototyping', 'Design Systems', 'Illustration'],
     social: {
@@ -83,14 +85,13 @@ const teamMembers = [
   {
     id: '5',
     name: 'Yadhu Choudhary',
-    role: 'Full-Stack Web Developer & Content Manager',
-    description: 'Responsible for website content, design polish, and user experience improvements.',
+    role: 'Full-Stack Developer & AI Content Specialist',
+    description: 'Develops innovative AI content features like auto-generated flashcards and podcasts. Maintains the course website.',
     image: 'team/yadhu.jpeg',
     responsibilities: [
-      'Replacing placeholder content with real information and team profiles',
-      'Adding images and visual content to the website',
-      'Error fixes and bug resolution across the website',
-      'Improving website responsiveness and UI/UX design polish'
+      'Completed the flashcards generation feature',
+      'Worked on podcast feature development and implemented audio processing and transcript generation',
+      'Maintains the course website'
     ],
     social: {
       github: 'https://github.com/yadhuuu1110',
@@ -106,7 +107,7 @@ export default function TeamPage() {
       {/* Hero Section with Group Photo */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-[#652497]/5 via-[#7c3aed]/5 to-transparent dark:from-[#652497]/10 dark:via-[#7c3aed]/10" />
-        
+
         <div className="relative max-w-7xl mx-auto px-6 py-16 sm:py-20">
           <div className="text-center space-y-6 mb-12">
             <div className="inline-block hero-badge-animate">
@@ -115,13 +116,13 @@ export default function TeamPage() {
                 Meet the Team
               </span>
             </div>
-            
+
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight hero-title-animate">
               <span className="bg-gradient-to-r from-[#652497] via-[#7c3aed] to-[#8b5cf6] bg-clip-text text-transparent">
                 The Minds Behind StudySage
               </span>
             </h1>
-            
+
             <p className="text-lg sm:text-xl text-gray-700 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed hero-description-animate">
               A passionate team of five dedicated to revolutionizing how students learn and study
             </p>
@@ -212,21 +213,21 @@ export default function TeamPage() {
                 backgroundSize: '40px 40px'
               }} />
             </div>
-            
+
             <div className="relative space-y-4">
               <h2 className="text-3xl font-bold mb-4">Our Story</h2>
               <p className="text-lg text-white/90 leading-relaxed">
-                We're a team of five university students who experienced firsthand the challenges of traditional studying. 
-                Frustrated by hours spent creating flashcards and feeling isolated while preparing for exams, we decided to build 
+                We're a team of five university students who experienced firsthand the challenges of traditional studying.
+                Frustrated by hours spent creating flashcards and feeling isolated while preparing for exams, we decided to build
                 the study tool we wished we had.
               </p>
               <p className="text-lg text-white/90 leading-relaxed">
-                StudySage combines our diverse skills in software development, AI, design, and education to create an 
-                all-in-one platform that makes studying smarter, faster, and more social. We're not just building an app—we're 
+                StudySage combines our diverse skills in software development, AI, design, and education to create an
+                all-in-one platform that makes studying smarter, faster, and more social. We're not just building an app—we're
                 building the future of learning.
               </p>
               <p className="text-lg text-white/90 leading-relaxed">
-                This project started as a university capstone but has evolved into our passion. We believe every student 
+                This project started as a university capstone but has evolved into our passion. We believe every student
                 deserves access to powerful, AI-driven study tools that adapt to their needs.
               </p>
             </div>
@@ -241,7 +242,7 @@ export default function TeamPage() {
           <div className="absolute inset-0 flex items-center justify-center opacity-5 pointer-events-none">
             <Users className="w-64 h-64 text-[#652497]" />
           </div>
-          
+
           {/* Content */}
           <div className="relative text-center space-y-4 my-8">
             <div className="inline-block">
@@ -249,18 +250,18 @@ export default function TeamPage() {
                 Our Team
               </span>
             </div>
-            
+
             <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-900 dark:text-white">
               Meet the{' '}
               <span className="bg-gradient-to-r from-[#652497] via-[#7c3aed] to-[#8b5cf6] bg-clip-text text-transparent">
                 Creators
               </span>
             </h2>
-            
+
             <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed">
               Five passionate individuals combining their unique skills to transform how students learn
             </p>
-            
+
             {/* Decorative Line */}
             <div className="flex items-center justify-center gap-3 pt-4">
               <div className="w-12 h-1 rounded-full bg-gradient-to-r from-transparent to-[#652497]" />
