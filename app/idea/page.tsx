@@ -334,12 +334,29 @@ export default function IdeaPage() {
           ))}
         </div>
 
-        {/* Thread Diagram Section */}
+        {/* MVVM Diagram Section */}
         <div className="mt-16 text-center space-y-8">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800">
             <Zap className="w-5 h-5 text-blue-600 dark:text-blue-400" />
             <span className="text-blue-700 dark:text-blue-300 font-semibold text-sm">Architecture</span>
           </div>
+
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white">
+            MVVM <span className="bg-gradient-to-r from-[#652497] to-[#8b5cf6] bg-clip-text text-transparent">Diagram</span>
+          </h2>
+
+          <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-200 dark:border-slate-700">
+            <img
+              src="/MVVM.svg"
+              alt="MVVM Diagram"
+              className="w-full h-auto"
+            />
+          </div>
+        </div>
+
+        {/* Thread Diagram Section */}
+        <div className="mt-16 text-center space-y-8">
+          
 
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white">
             Thread <span className="bg-gradient-to-r from-[#652497] to-[#8b5cf6] bg-clip-text text-transparent">Diagram</span>
