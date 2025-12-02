@@ -291,7 +291,7 @@ export default function IdeaPage() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8">
+        <div className="grid lg:grid-cols-2 gap-8">
           {[
             {
               title: "Project Pitch",
@@ -307,6 +307,11 @@ export default function IdeaPage() {
               title: "Show and Tell 2",
               description: "Latest features and improvements.",
               videoId: "PZS5ptc-UMU"
+            },
+            {
+              title: "Final Presentation",
+              description: "Our final project presentation.",
+              videoId: "2l123Y8h9FQ"
             }
           ].map((video, idx) => (
             <div key={idx} className="group relative rounded-2xl overflow-hidden bg-white dark:bg-slate-800 shadow-xl border border-gray-200 dark:border-slate-700 hover:border-[#652497]/50 transition-all duration-300">
@@ -356,7 +361,7 @@ export default function IdeaPage() {
 
         {/* Thread Diagram Section */}
         <div className="mt-16 text-center space-y-8">
-          
+
 
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white">
             Thread <span className="bg-gradient-to-r from-[#652497] to-[#8b5cf6] bg-clip-text text-transparent">Diagram</span>
